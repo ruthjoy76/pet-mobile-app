@@ -19,9 +19,9 @@ import articleIconFocused from '../assets/articlefocused.png';
 import articleIconUnfocused from '../assets/articlenotfocused.png';
 
 // Screen names
-const homeName = 'Home';
-const gameName = 'Game';
-const articleName = 'Article';
+const homeName = 'Domov';
+const gameName = 'Hry';
+const articleName = 'Úlohy';
 
 const Tab = createBottomTabNavigator();
 
