@@ -55,10 +55,7 @@ function MainContainer() {
                     return <Text style={labelStyle}>{articleName}</Text>;
                 }
             },
-            tabBarLabelStyle: {
-                color: 'blue', // Change the color of the font here
-                fontSize: 12, // Change the font size here
-            },
+ 
           })}>
           <Tab.Screen name={homeName} component={HomeScreen} options={{ headerShown: false }} />
           <Tab.Screen name={gameName} component={GameScreen} options={{ headerShown: false }} />
@@ -70,12 +67,11 @@ function MainContainer() {
 
 const styles = {
   tabLabelFocused: {
-    color: '#FFBA69', // Example color for focused tab label
-    fontWeight: 'bold', // Example font weight for focused tab label
+    color: '#FFBA69', 
+    fontWeight: 'bold', 
   },
   tabLabelUnfocused: {
-    color:'#5A2828', // Example color for unfocused tab label
-    fontStyle: 'italic', // Example font style for unfocused tab label
+    color:'#5A2828',    
   },
 };
 
