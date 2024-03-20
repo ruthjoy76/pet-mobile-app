@@ -1,4 +1,2 @@
 
-![432011950_3069307513199496_6345600553573741261_n](https://github.com/ruthjoy76/pet-mobile-app/assets/126475991/ae54c27a-5173-4d07-9fde-9b83abbf113c)
-![431799306_386168864199006_7279266442656878717_n](https://github.com/ruthjoy76/pet-mobile-app/assets/126475991/bd1c044c-b8ef-4657-b923-94a4e56020bc)
-![429573776_967233378377520_7312964464564897284_n](https://github.com/ruthjoy76/pet-mobile-app/assets/126475991/8865d6eb-51f3-4805-a45a-2dc5d520f25f)
+![Nude Neutral Aesthetic Minimalist Skincare Studio Phone Mockup Instagram Post](https://github.com/ruthjoy76/pet-mobile-app/assets/126475991/e23dc720-f062-49be-8ee6-842bebf66d3f)
