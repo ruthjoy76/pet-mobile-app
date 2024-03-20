@@ -18,7 +18,7 @@ export default function HomeScreen({ navigation }) {
             <View style={styles.header}>
                 <Text style={styles.headerText}>Úlohy</Text>
             </View >
-
+        <View style={styles.subContainer}>
             <View style={styles.subHeader}>
                 <Image
                     source={dog}
@@ -86,6 +86,8 @@ export default function HomeScreen({ navigation }) {
                     </TouchableOpacity>
                 </View>
             </View>    
+</View>
+            
         </View>
     );
 }
@@ -93,24 +95,24 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFEAD1',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        backgroundColor: '#fff',
     },
     header: {
         height: 100,
-        backgroundColor: 'white',
-        alignItems: 'center',
         justifyContent: 'center',
-        padding: 10,
+    },
+    subContainer: {
+        flex: 1,
+        backgroundColor: '#FFEAD1',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
     },
     headerText: {
         fontSize: 28,
         fontWeight: '700',
         color: '#000000', 
-        textAlign: 'left',  
-        marginTop: 10,
-        marginLeft: 20,
+        textAlign: 'center',  
+        marginTop: 20,
     },
     subHeaderText: {
         fontSize: 20,
@@ -158,7 +160,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#5A2828',
         borderRadius: 7,
-        marginTop: 20,
+        marginTop: 30,
         marginLeft: 10,
         alignItems: 'center',
         justifyContent: 'center',
