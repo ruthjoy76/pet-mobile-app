@@ -2,10 +2,8 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import styles from '../styles/PetNameStyles';
 
-
 // Import images
 import cat from '../../../assets/cat.png';
-import birdGame from '../../../assets/birdGame.png';
 import button from '../../../assets/button.png';
 
 export default function PetName({ navigation }) {
