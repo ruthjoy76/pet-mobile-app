@@ -4,8 +4,9 @@ const ArticleScreenStyles = {
         backgroundColor: '#fff',
     },
     header: {
-        height: 100,
+        height: 50,
         justifyContent: 'center',
+        marginBottom: 15,
     },
     subContainer: {
         flex: 1,
@@ -16,9 +17,10 @@ const ArticleScreenStyles = {
     headerText: {
         fontSize: 28,
         fontWeight: '700',
+        letterSpacing: 0.5,
         color: '#000000', 
         textAlign: 'center',  
-        marginTop: 20,
+        marginTop: 10,
     },
     subHeaderText: {
         fontSize: 20,
@@ -30,7 +32,7 @@ const ArticleScreenStyles = {
     containerItem: {
         backgroundColor: '#fff',
         borderRadius: 22,
-        margin: 20,
+        margin: 15,
         marginTop: 5,
         padding: 10,
         alignItems: 'flex-start',
@@ -94,7 +96,25 @@ const ArticleScreenStyles = {
         alignSelf: 'center', 
         backgroundColor: '#464646',
         marginVertical: 10,
-        marginBottom: 20,
+        marginBottom: 10,
+    },
+    circleButton: {
+        position: 'absolute',
+        bottom: 20,
+        right: 20,
+        backgroundColor: '#fff',
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    plusSymbol: {
+        position: 'absolute',
+        color: '#000000', // Change color to match your design
+        fontSize: 80, // Adjust the font size to make the plus symbol bigger
+        fontWeight: '200',
+        
     },
 };
  export default ArticleScreenStyles;

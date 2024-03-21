@@ -4,8 +4,9 @@ const GameScreenStyles = {
         backgroundColor: '#fff',
     },
     header: {
-        height: 100,
+        height: 50,
         justifyContent: 'center',
+        marginBottom: 15,
     },
     subContainer: {
         flex: 1,
@@ -16,9 +17,10 @@ const GameScreenStyles = {
     headerText: {
         fontSize: 28,
         fontWeight: '700',
+        letterSpacing: 0.5,
         color: '#000000', 
         textAlign: 'center',  
-        marginTop: 20,
+        marginTop: 10,
     },
     subHeaderText: {
         fontSize: 20,
