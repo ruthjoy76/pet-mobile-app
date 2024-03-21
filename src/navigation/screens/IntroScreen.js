@@ -3,7 +3,7 @@ import { View, Text, Button, TouchableOpacity, Image } from 'react-native';
 
 const IntroScreen = ({ navigation }) => {
   const goToPickAnimalScreen = () => {
-    navigation.navigate('Pick'); // Navigate to the Pick Animal screen
+    navigation.navigate('PickAnimal'); // Navigate to the Pick Animal screen
   };
 
   return (
@@ -11,7 +11,7 @@ const IntroScreen = ({ navigation }) => {
       {/* Wrap the Image component inside TouchableOpacity */}
       <TouchableOpacity onPress={goToPickAnimalScreen}>
         <Image
-          source={require('../../assets/button.png')} // Specify the path to your image
+          source={require('../../../assets/button.png')} // Specify the path to your image
           style={{ width: 150, height: 150 }} // Adjust the width and height as needed
         />
       </TouchableOpacity>

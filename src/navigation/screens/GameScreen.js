@@ -4,9 +4,9 @@ import styles from '../styles/GameScreenStyles';
 
 
 // Import images
-import dogGame from '../../assets/dogGame.png';
-import birdGame from '../../assets/birdGame.png';
-import button from '../../assets/button.png';
+import dogGame from '../../../assets/dogGame.png';
+import birdGame from '../../../assets/birdGame.png';
+import button from '../../../assets/button.png';
 
 export default function GameScreen({ navigation }) {
     return (

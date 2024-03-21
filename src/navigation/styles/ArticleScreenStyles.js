@@ -1,0 +1,100 @@
+const ArticleScreenStyles = {
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
+    header: {
+        height: 100,
+        justifyContent: 'center',
+    },
+    subContainer: {
+        flex: 1,
+        backgroundColor: '#FFEAD1',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+    },
+    headerText: {
+        fontSize: 28,
+        fontWeight: '700',
+        color: '#000000', 
+        textAlign: 'center',  
+        marginTop: 20,
+    },
+    subHeaderText: {
+        fontSize: 20,
+        fontWeight: '400',
+        color: '#5A2828', 
+        textAlign: 'left',  
+        marginTop: 10,
+    },
+    containerItem: {
+        backgroundColor: '#fff',
+        borderRadius: 22,
+        margin: 20,
+        marginTop: 5,
+        padding: 10,
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+    },
+    checkedContainerItem: {
+        backgroundColor: '#e5e5e5',
+    },
+    containerText: {
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#5A2828', 
+        textAlign: 'left',  
+        marginLeft: 20,
+        marginBottom: 5,
+    },
+    subHeader: {
+        flexDirection: 'row',
+        padding: 10,
+        marginTop: 10,
+        marginLeft: 15,
+        marginBottom: 10,
+    },
+    imageStyle: {
+        height: 50,
+        width: 50,
+        borderRadius: 30,
+        marginRight: 10,
+    },
+    checkbox: {
+        height: 20,
+        width: 20,
+        borderWidth: 1,
+        borderColor: '#5A2828',
+        borderRadius: 7,
+        marginTop: 30,
+        marginLeft: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    checked: {
+        backgroundColor: '#5A2828',
+    },
+    checkmark: {
+        color: 'white',
+    },
+    button: {
+        backgroundColor: '#FFEAD1',
+        paddingVertical: 10,
+        paddingHorizontal: 25,
+        borderRadius: 20,
+        marginLeft: 10,
+    },
+    buttonText: {
+        color: '#464646',
+        fontSize: 16,
+    },
+    divider: {
+        height: 1,
+        width: '90%',
+        alignSelf: 'center', 
+        backgroundColor: '#464646',
+        marginVertical: 10,
+        marginBottom: 20,
+    },
+};
+ export default ArticleScreenStyles;

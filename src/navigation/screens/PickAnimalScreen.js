@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import dog from '../../assets/dog.png';
-import cat from '../../assets/cat.png';
+import dog from '../../../assets/dog.png';
+import cat from '../../../assets/cat.png';
 
 const PickAnimalScreen = ({ navigation }) => {
     const [isChecked, setIsChecked] = useState([false, false]);
@@ -18,6 +18,7 @@ const PickAnimalScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.header}></View>
+            <View style={styles.mainContainer}>
             <View style={styles.subHeader}>
                 <Text style={styles.subHeaderText}>Pick your animal</Text>
             </View>
@@ -51,6 +52,7 @@ const PickAnimalScreen = ({ navigation }) => {
                     </View>
                 </View>
             </TouchableOpacity>
+            </View>
         </View>
     );
 }
@@ -58,16 +60,17 @@ const PickAnimalScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFEAD1',
-        borderTopLeftRadius: 20,
-        borderTopRightRadius: 20,
+        backgroundColor: '#fff',
     },
     header: {
         height: 100,
-        backgroundColor: 'white',
-        alignItems: 'center',
         justifyContent: 'center',
-        padding: 10,
+    },
+    mainContainer: {
+        flex: 1,
+        backgroundColor: '#FFEAD1',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
     },
     subHeaderText: {
         fontSize: 32,
