@@ -15,7 +15,7 @@ const PickAnimalScreen = ({ navigation }) => {
     };
 
     const handleContainerPress = () => {
-        navigation.navigate('MainTabs');
+        navigation.navigate('PetName');
     };
 
     return (
