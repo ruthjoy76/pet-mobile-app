@@ -1,13 +1,33 @@
 // MainTabs.js
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
 import { Text, View } from "react-native";
 import HomeScreen from "../navigation/screens/HomeScreen";
 import GameScreen from "../navigation/screens/GameScreen";
 import ArticleScreen from "../navigation/screens/ArticleScreen";
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
+import PetArticleScreen from "../navigation/screens/PetArticleScreen"; // Import PetArticleScreen
 
 const Tab = createBottomTabNavigator();
+const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
+
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ headerShown: false }}
+      />
+      <HomeStack.Screen
+        name="PetArticle"
+        component={PetArticleScreen}
+        options={{ headerShown: false }}
+      />
+    </HomeStack.Navigator>
+  );
+}
 
 function MainTabs() {
   return (
@@ -21,7 +41,7 @@ function MainTabs() {
       }}>
       <Tab.Screen
         name="Domov"
-        component={HomeScreen}
+        component={HomeStackScreen} // Use the nested stack navigator
         options={{
           headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
@@ -44,7 +64,7 @@ function MainTabs() {
         name="Hry"
         component={GameScreen}
         options={{
-          headerShown: false, // Hide the header for this screen
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
             <View style={{}}>
               <CustomTabBarIcon
@@ -65,7 +85,7 @@ function MainTabs() {
         name="Úlohy"
         component={ArticleScreen}
         options={{
-          headerShown: false, // Hide the header for this screen
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
             <View style={{}}>
               <CustomTabBarIcon

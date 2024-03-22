@@ -29,7 +29,7 @@ function MainContainer() {
                   name="arrow-back"
                   size={24}
                   color="white"
-                  onPress={() => navigation.goBack()}
+                  onPress={() =>  navigation.navigate('Start')}
                   style={styles.arrow}
                 />
               </View>
@@ -54,6 +54,7 @@ function MainContainer() {
             ),
             title: "", // Remove the title
           })} />
+
         <Stack.Screen
           name="MainTabs"
           component={MainTabs}

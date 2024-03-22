@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity} from 'react-native';
 import styles from '../styles/ArticleScreenStyles';
 
 // Import images
 import dog from '../../../assets/dog.png';
 
-export default function HomeScreen({ navigation }) {
+export default function ArticleScreen({ navigation }) {
     const [isChecked, setIsChecked] = useState([false, false, false]);
 
     const toggleCheckbox = (index) => {

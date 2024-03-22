@@ -4,8 +4,9 @@ const PetNameStyles = {
         backgroundColor: '#fff',
     },
     header: {
-        height: 50,
+        height: 60,
         justifyContent: 'center',
+        alignItems: 'center',
         marginBottom: 15,
     },
     subContainer: {
@@ -13,72 +14,75 @@ const PetNameStyles = {
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
+        marginTop: 40,
+        overflow: 'hidden', // I-clip ang nilalaman na nag-ooverflow
     },
     headerText: {
-        fontSize: 28,
+        fontSize: 48,
+        height: 90,
+        width: '90%',
         fontWeight: '700',
-        letterSpacing: 0.5,
+        letterSpacing: -0.5,
         color: '#000000', 
         textAlign: 'center',  
-        marginTop: 10,
-    },
-    subHeaderText: {
-        fontSize: 20,
-        fontWeight: '400',
-        color: '#5A2828', 
-        textAlign: 'left',  
-        marginTop: 10,
-        marginLeft: 20,
+        marginTop: 50, 
     },
     containerItem: {
         flexDirection: 'row',
-        alignItems: 'center',
+        alignItems: 'flex-start', // I-align ang mga item sa itaas
         justifyContent: 'space-between',
-        backgroundColor: 'white',
+        backgroundColor: '#fff',
         borderRadius: 22,
+        top: 30,
         margin: 20,
+        marginTop: 80,
         padding: 10,
-        height: 180,
+        height: '60%',
+        position: 'relative', // Papaganahin ang absolute positioning sa loob ng container na ito
     },
     imageContainer: {
         flex: 1,
-    },
-    containerText: {
-        fontSize: 18,
-        fontWeight: '600',
-        color: '#5A2828', 
-        textAlign: 'left',  
-        marginTop: 20,
-        marginLeft: 20,
-        marginBottom: 5,
-    },
-    containerParagraphText: {
-        fontSize: 14,
-        fontWeight: '300',
-        color: '#5A2828', 
-        textAlign: 'left',
-        marginLeft: 20,
-        marginRight: 20,
+        position: 'absolute', // Papaganahin ang absolute positioning ng container
+        top: -50, // Ilipat ang container pataas ng 50 unit (ayusin depende sa iyong kagustuhan)
+        left: '50%',
+        marginLeft: -65, // Ayusin depende sa sukat ng container
     },
     imageStyle: {
         width: 150, 
-        height: 100, 
+        height: 150, 
         borderRadius: 10, 
-        marginBottom: 20, 
-        marginLeft: 20,
-        marginTop: 10, 
+    },
+    input: {
+        position: 'absolute',
+        bottom: 20,
+        left: '40%',
+        transform: [{ translateX: -50 }],
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 10,
+        padding: 10,
+        marginBottom: 50,
+        paddingHorizontal: 50,
+        paddingVertical: 10,
+        textAlign: 'center',
     },
     buttonContainer: {
-        marginRight: 20,
-        alignItems: 'flex-end', // Align button to the right
-        justifyContent: 'flex-end', // Align button to the bottom
-        marginTop: 90, // 
+        position: 'absolute',
+        bottom: 20, // Adjust the position of the button
+        left: '57%',
+        transform: [{ translateX: -50 }], // Center the button horizontally
+        backgroundColor: '#FFBA69',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
     },
-    buttonImage: {
-        width: 56,
-        height: 56,
-        resizeMode: 'contain',
+    buttonText: {
+        color: '#5A2828',
+        fontSize: 16,
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
+  
 };
 
 export default PetNameStyles;
