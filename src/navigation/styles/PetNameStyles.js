@@ -14,7 +14,7 @@ const PetNameStyles = {
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
-        marginTop: 40,
+        marginTop: 100,
         overflow: 'hidden', // I-clip ang nilalaman na nag-ooverflow
     },
     headerText: {

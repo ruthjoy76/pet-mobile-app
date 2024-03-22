@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import styles from '../styles/PetArticleScreenStyles';
+import { MaterialIcons} from '@expo/vector-icons';
 
 // Import images
 import dogArticle from '../../../assets/dogArticle.png';
@@ -19,9 +20,12 @@ export default function PetArticleScreen({ navigation }) {
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container}>
         <View>
-          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-            <Text>Go back to Home</Text>
-          </TouchableOpacity>
+        <TouchableOpacity
+      style={styles.circleButton}
+      onPress={() => navigation.navigate("Home")}
+    >
+      <MaterialIcons name="keyboard-arrow-left" size={24} color="#5A2828" />
+    </TouchableOpacity>
         </View>
         <View>
           <Text style={styles.header}>Ako správne vyčistiť zuby psíkovy?</Text>

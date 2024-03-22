@@ -29,6 +29,7 @@ const PetArticleScreenStyles = {
       fontWeight: '600',
       letterSpacing: -0.5,
       marginBottom: 10,
+      marginTop: 20,
     },
     subheader: {
       fontSize: 14,
@@ -49,6 +50,15 @@ const PetArticleScreenStyles = {
       marginVertical: 'auto',
       marginBottom: 10,
       alignSelf: 'center'
+    },
+    circleButton: {
+      width: 60,
+      height: 60,
+      borderRadius: 30,
+      backgroundColor: "#FFBA69",
+      justifyContent: "center",
+      alignItems: "center",
+      marginTop: 20,
     },
   };
 

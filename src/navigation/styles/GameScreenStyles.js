@@ -6,7 +6,8 @@ const GameScreenStyles = {
     header: {
         height: 50,
         justifyContent: 'center',
-        marginBottom: 15,
+        marginBottom: 10,
+        marginTop: 55,
     },
     subContainer: {
         flex: 1,
@@ -37,8 +38,9 @@ const GameScreenStyles = {
         backgroundColor: 'white',
         borderRadius: 22,
         margin: 20,
-        padding: 10,
-        height: 180,
+        padding: 5,
+        height: 250,
+        marginBottom: 5,
     },
     imageContainer: {
         flex: 1,
@@ -65,14 +67,14 @@ const GameScreenStyles = {
         height: 100, 
         borderRadius: 10, 
         marginBottom: 20, 
-        marginLeft: 20,
-        marginTop: 10, 
+        marginLeft: 50,
+        marginTop: 20, 
     },
     buttonContainer: {
         marginRight: 20,
         alignItems: 'flex-end', // Align button to the right
         justifyContent: 'flex-end', // Align button to the bottom
-        marginTop: 90, // 
+        marginTop: 130, // 
     },
     buttonImage: {
         width: 56,

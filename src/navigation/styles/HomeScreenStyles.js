@@ -6,7 +6,8 @@ const HomeScreenStyles = {
     header: {
         height: 60,
         justifyContent: 'center',
-        marginBottom: 15,
+        marginBottom: 10,
+        marginTop: 55,
     },
     subContainer: {
         flex: 1,

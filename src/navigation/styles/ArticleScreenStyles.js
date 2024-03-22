@@ -6,7 +6,8 @@ const ArticleScreenStyles = {
     header: {
         height: 50,
         justifyContent: 'center',
-        marginBottom: 15,
+        marginBottom: 10,
+        marginTop: 55,
     },
     subContainer: {
         flex: 1,
@@ -85,6 +86,15 @@ const ArticleScreenStyles = {
         paddingHorizontal: 25,
         borderRadius: 20,
         marginLeft: 10,
+        marginBottom: 5,
+        shadowColor: '#000002A',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
     },
     buttonText: {
         color: '#464646',

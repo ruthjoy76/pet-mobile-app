@@ -9,7 +9,7 @@ const PickAnimalScreenStyles = {
     },
     mainContainer: {
         flex: 1,
-        marginTop: 30,
+        marginTop: 100,
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
