@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, TouchableOpacity, Image } from 'react-native';
 
-const IntroScreen = ({ navigation }) => {
+export default function IntroScreen  ({ navigation }) {
   const goToPickAnimalScreen = () => {
     navigation.navigate('PickAnimal'); // Navigate to the Pick Animal screen
   };
@@ -20,4 +20,4 @@ const IntroScreen = ({ navigation }) => {
   );
 };
 
-export default IntroScreen;
+

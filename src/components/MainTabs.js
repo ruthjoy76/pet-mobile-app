@@ -8,9 +8,11 @@ import GameScreen from "../navigation/screens/GameScreen";
 import ArticleScreen from "../navigation/screens/ArticleScreen";
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
 import PetArticleScreen from "../navigation/screens/PetArticleScreen"; // Import PetArticleScreen
+import PetGameScreen from "../navigation/screens/PetGameScreen";
 
 const Tab = createBottomTabNavigator();
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
+const GameStack = createStackNavigator(); // Create a stack navigator for GameScreen and PetGameScreen
 
 function HomeStackScreen() {
   return (
@@ -25,7 +27,28 @@ function HomeStackScreen() {
         component={PetArticleScreen}
         options={{ headerShown: false }}
       />
+      
     </HomeStack.Navigator>
+    
+  );
+}
+
+function GameStackScreen() {
+  return (
+    <GameStack.Navigator>
+      <GameStack.Screen
+        name="Game"
+        component={GameScreen}
+        options={{ headerShown: false }}
+      />
+      <GameStack.Screen
+        name="PetGame"
+        component={PetGameScreen}
+        options={{ headerShown: false }}
+      />
+      
+    </GameStack.Navigator>
+    
   );
 }
 
@@ -62,7 +85,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Hry"
-        component={GameScreen}
+        component={GameStackScreen}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused, color, size }) => (
