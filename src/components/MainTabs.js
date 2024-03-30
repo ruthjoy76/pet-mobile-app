@@ -8,7 +8,7 @@ import GameScreen from "../navigation/screens/GameScreen";
 import ArticleScreen from "../navigation/screens/ArticleScreen";
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
 import PetArticleScreen from "../navigation/screens/PetArticleScreen"; // Import PetArticleScreen
-import PetGameScreen from "../navigation/screens/PetGameScreen";
+import BirdGameScreen from "../navigation/screens/BirdGameScreen";
 
 const Tab = createBottomTabNavigator();
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
@@ -42,8 +42,8 @@ function GameStackScreen() {
         options={{ headerShown: false }}
       />
       <GameStack.Screen
-        name="PetGame"
-        component={PetGameScreen}
+        name="BirdGame"
+        component={BirdGameScreen}
         options={{ headerShown: false }}
       />
       

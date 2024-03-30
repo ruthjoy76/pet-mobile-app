@@ -7,18 +7,18 @@ const PetNameStyles = {
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 15,
+        marginTop: 20, 
     },
     subContainer: {
         flex: 1,
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
-        marginTop: 100,
+        marginTop: 50,
         overflow: 'hidden', // I-clip ang nilalaman na nag-ooverflow
     },
     headerText: {
-        fontSize: 48,
+        fontSize: 32,
         height: 90,
         width: '90%',
         fontWeight: '700',
@@ -32,47 +32,49 @@ const PetNameStyles = {
         alignItems: 'flex-start', // I-align ang mga item sa itaas
         justifyContent: 'space-between',
         backgroundColor: '#fff',
-        borderRadius: 22,
-        top: 30,
+        borderRadius: 20,
         margin: 20,
-        marginTop: 80,
+        marginTop: 30,
         padding: 10,
-        height: '60%',
-        position: 'relative', // Papaganahin ang absolute positioning sa loob ng container na ito
+        height: '80%',
+        position: 'relative', 
     },
     imageContainer: {
         flex: 1,
-        position: 'absolute', // Papaganahin ang absolute positioning ng container
-        top: -50, // Ilipat ang container pataas ng 50 unit (ayusin depende sa iyong kagustuhan)
-        left: '50%',
-        marginLeft: -65, // Ayusin depende sa sukat ng container
+        position: 'absolute', 
+        top: 20, 
+        alignItems: 'center',
+        
     },
     imageStyle: {
-        width: 150, 
-        height: 150, 
-        borderRadius: 10, 
+        width: 260, 
+        height: 310, 
+        borderRadius: 20,
+        margin: 40, 
+        marginTop: 30,
     },
     input: {
         position: 'absolute',
         bottom: 20,
-        left: '40%',
+        left: '25%',
         transform: [{ translateX: -50 }],
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 10,
         padding: 10,
         marginBottom: 50,
-        paddingHorizontal: 50,
+        paddingHorizontal: 100,
         paddingVertical: 10,
         textAlign: 'center',
     },
     buttonContainer: {
         position: 'absolute',
         bottom: 20, // Adjust the position of the button
-        left: '57%',
+        left: '25%',
         transform: [{ translateX: -50 }], // Center the button horizontally
         backgroundColor: '#FFBA69',
-        paddingHorizontal: 20,
+        borderWidth: 1,
+        paddingHorizontal: 125,
         paddingVertical: 10,
         borderRadius: 10,
     },

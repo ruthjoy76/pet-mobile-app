@@ -6,10 +6,11 @@ import styles from '../styles/HomeScreenStyles';
 export default function HomeScreen({ navigation }) {
     return (
         <View style={styles.container}>
+           
+            <View style={styles.subContainer}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>Welcome in PetMachine</Text>
             </View>
-            <View style={styles.subContainer}>
                 <Text style={styles.subHeaderText}>Ako sa postarať o zvieratko?</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('PetArticle')}>
                     <View style={styles.containerItem}>

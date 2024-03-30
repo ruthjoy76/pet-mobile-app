@@ -4,16 +4,16 @@ const ArticleScreenStyles = {
         backgroundColor: '#fff',
     },
     header: {
-        height: 50,
+        height: 60,
         justifyContent: 'center',
-        marginBottom: 10,
-        marginTop: 55,
+        marginTop: 15,
     },
     subContainer: {
         flex: 1,
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
+        marginTop: 50,
     },
     headerText: {
         fontSize: 28,
@@ -21,7 +21,7 @@ const ArticleScreenStyles = {
         letterSpacing: 0.5,
         color: '#000000', 
         textAlign: 'center',  
-        marginTop: 10,
+        marginTop: 0,
     },
     subHeaderText: {
         fontSize: 20,

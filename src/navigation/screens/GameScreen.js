@@ -12,11 +12,12 @@ export default function GameScreen({ navigation }) {
     
     return (
         <View style={styles.container}>
+     
+            <View style={styles.subContainer}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>Hry</Text>
             </View>
 
-            <View style={styles.subContainer}>
                 <View style={styles.containerItem}>
                     <View style={styles.imageContainer}>
                         <Text style={styles.containerText}>Skoky so Štvornohým Kamarátom</Text>
@@ -28,7 +29,7 @@ export default function GameScreen({ navigation }) {
                     </View>
                     {/* Wrap the TouchableOpacity properly */}
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('PetGame')}
+                        onPress={() => navigation.navigate('BirdGame')}
                         style={styles.buttonContainer}>
                         <Image
                             source={button}

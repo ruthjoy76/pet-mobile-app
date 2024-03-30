@@ -46,6 +46,9 @@ const PetArticleScreenStyles = {
       color: '#5A2828',
     },
     imageStyle: {
+      width: 350,
+      height: 170,
+      borderRadius: 20,
       marginHorizontal: 'auto',
       marginVertical: 'auto',
       marginBottom: 10,

@@ -15,10 +15,11 @@ export default function ArticleScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
+          
+            <View style={styles.subContainer}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>Úlohy</Text>
             </View>
-            <View style={styles.subContainer}>
                 <View style={styles.subHeader}>
                     <Image
                         source={dog}
