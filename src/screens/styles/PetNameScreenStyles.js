@@ -1,4 +1,8 @@
 const PetNameStyles = {
+    safeAreaView: {
+        flex: 1,
+        backgroundColor: '#fff', // Set the background color of the SafeAreaView
+    },
     container: {
         flex: 1,
         backgroundColor: '#fff',
@@ -55,30 +59,37 @@ const PetNameStyles = {
     },
     petNameContainer: {
         position: 'absolute',
-        bottom: 200, // Adjust the distance from the bottom as needed
-        left: '60%', // Center the container horizontally
-        transform: [{ translateX: -50 }],
+        bottom: 140, // Adjust the distance from the bottom as needed
+        justifyContent: 'center',
         alignItems: 'center',
+        borderWidth: 0.5,
+        backgroundColor: '#fff',
+        borderColor: '#f1f1f1',
+        borderRadius: 10,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        minWidth: 100,
+        margin: 48,
+        width: '75%', // Adjust the width as needed
     },
     petName: {
         fontSize: 24,
         fontWeight: 'bold',
+        textAlign: 'center',
     },
     input: {
         position: 'absolute',
-        bottom: 20,
-        left: '25%',
-        transform: [{ translateX: -50 }],
+        bottom: 40, // Adjust the distance from the bottom as needed
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 10,
+        margin: 30,
         padding: 10,
-        marginBottom: 50,
-        paddingHorizontal: 100,
-        paddingVertical: 10,
+        width: '60%', // Adjust the width as needed
         textAlign: 'center',
+        width: '88%',
     },
-
+  
     buttonContainer: {
         position: 'absolute',
         bottom: 20, // Adjust the position of the button
@@ -96,7 +107,6 @@ const PetNameStyles = {
         fontWeight: 'bold',
         textAlign: 'center',
     },
-  
 };
 
 export default PetNameStyles;
