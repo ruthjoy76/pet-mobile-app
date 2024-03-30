@@ -57,9 +57,9 @@ function MainTabs() {
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          height: 65,
-          paddingTop: 5, // Add padding to the top of the tab bar
-          paddingBottom: 5, // Add padding to the bottom of the tab bar
+          height: 80,
+          paddingTop: 10, // Add padding to the top of the tab bar
+          paddingBottom: 15, // Add padding to the bottom of the tab bar
         }
       }}>
       <Tab.Screen
