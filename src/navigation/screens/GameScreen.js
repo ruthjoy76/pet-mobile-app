@@ -49,7 +49,7 @@ export default function GameScreen({ navigation }) {
                     </View>
                     {/* Wrap the TouchableOpacity properly */}
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('PetGame')}
+                        onPress={() => navigation.navigate('BirdGame')}
                         style={styles.buttonContainer}>
                         <Image
                             source={button}
