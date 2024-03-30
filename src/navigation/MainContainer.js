@@ -1,10 +1,10 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import StartScreen from "../navigation/screens/IntroScreen";
-import PickAnimalScreen from "../navigation/screens/PickAnimalScreen";
-import PetName from "../navigation/screens/PetNameScreen";
-import MainTabs from "../components/MainTabs";
+import StartScreen from "../screens/mobileScreen/IntroScreen";
+import PickAnimalScreen from "../screens/mobileScreen/PickAnimalScreen";
+import PetName from "../screens/mobileScreen/PetNameScreen";
+import MainTabs from "../navigation/MainTabs";
 
 const Stack = createStackNavigator();
 

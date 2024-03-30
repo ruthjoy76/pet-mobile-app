@@ -15,7 +15,7 @@ const PickAnimalScreenStyles = {
         borderTopRightRadius: 20,
     },
     subHeaderText: {
-        fontSize: 32,
+        fontSize: 28,
         fontWeight: '700',
         color: '#000000',
         textAlign: 'center',
@@ -35,20 +35,21 @@ const PickAnimalScreenStyles = {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        height: 80,
-        marginBottom: 10,
+        height: 90,
+        justifyContent: 'space-between',
         paddingHorizontal: 10,
-        paddingVertical: 30,
+        paddingVertical: 10,
     },
     checkedContainerItem: {
         backgroundColor: '#e5e5e5',
     },
     containerText: {
-        fontSize: 18,
+        fontSize: 22,
         fontWeight: '600',
         color: '#5A2828',
-        textAlign: 'left',
-        marginLeft: 25,
+        textAlign: 'center',
+        marginLeft: 10,
+   
     },
     subHeader: {
         flexDirection: 'row',
@@ -57,34 +58,13 @@ const PickAnimalScreenStyles = {
         marginLeft: 15,
         marginBottom: 10,
     },
+    
     imageStyle: {
-        height: 50,
-        width: 50,
-        borderRadius: 30,
-        marginRight: 10,
-    },
-    checkbox: {
-        height: 20,
-        width: 20,
-        borderWidth: 1,
-        borderColor: '#5A2828',
-        borderRadius: 7,
-        marginLeft: 10,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    checked: {
-        backgroundColor: '#5A2828',
-    },
-    checkmark: {
-        color: 'white',
-    },
-    imageStyle: {
-        width: 67,
-        height: 67,
+        width: 80,
+        height: 75,
         borderRadius: 10,
         marginBottom: 30,
-        marginLeft: 20,
+        marginRight: 10,
         marginTop: 30,
     },
 };

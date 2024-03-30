@@ -15,7 +15,7 @@ const PetNameStyles = {
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         marginTop: 50,
-        overflow: 'hidden', // I-clip ang nilalaman na nag-ooverflow
+        overflow: 'hidden', 
     },
     headerText: {
         fontSize: 32,
@@ -29,7 +29,7 @@ const PetNameStyles = {
     },
     containerItem: {
         flexDirection: 'row',
-        alignItems: 'flex-start', // I-align ang mga item sa itaas
+        alignItems: 'flex-start', 
         justifyContent: 'space-between',
         backgroundColor: '#fff',
         borderRadius: 20,
@@ -53,6 +53,17 @@ const PetNameStyles = {
         margin: 40, 
         marginTop: 30,
     },
+    petNameContainer: {
+        position: 'absolute',
+        bottom: 200, // Adjust the distance from the bottom as needed
+        left: '60%', // Center the container horizontally
+        transform: [{ translateX: -50 }],
+        alignItems: 'center',
+    },
+    petName: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
     input: {
         position: 'absolute',
         bottom: 20,
@@ -67,6 +78,7 @@ const PetNameStyles = {
         paddingVertical: 10,
         textAlign: 'center',
     },
+
     buttonContainer: {
         position: 'absolute',
         bottom: 20, // Adjust the position of the button

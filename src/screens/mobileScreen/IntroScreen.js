@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, TouchableOpacity, Image } from 'react-native';
+import { View, TouchableOpacity, Image } from 'react-native';
 
 export default function IntroScreen  ({ navigation }) {
   const goToPickAnimalScreen = () => {

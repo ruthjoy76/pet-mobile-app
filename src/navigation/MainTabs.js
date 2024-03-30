@@ -3,12 +3,12 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Text, View } from "react-native";
-import HomeScreen from "../navigation/screens/HomeScreen";
-import GameScreen from "../navigation/screens/GameScreen";
-import ArticleScreen from "../navigation/screens/ArticleScreen";
+import HomeScreen from "../screens/mobileScreen/HomeScreen";
+import GameScreen from "../screens/mobileScreen/GameScreen";
+import ArticleScreen from "../screens/mobileScreen/ArticleScreen";
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
-import PetArticleScreen from "../navigation/screens/PetArticleScreen"; // Import PetArticleScreen
-import BirdGameScreen from "../navigation/screens/BirdGameScreen";
+import PetArticleScreen from "../screens/mobileScreen/PetArticleScreen"; // Import PetArticleScreen
+import BirdGameScreen from "../screens/mobileScreen/BirdGameScreen";
 
 const Tab = createBottomTabNavigator();
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
