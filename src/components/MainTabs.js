@@ -67,7 +67,7 @@ function MainTabs() {
         component={HomeStackScreen} // Use the nested stack navigator
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused}) => (
             <View style={{}}>
               <CustomTabBarIcon
                 focused={focused}
@@ -76,7 +76,7 @@ function MainTabs() {
               />
             </View>
           ),
-          tabBarLabel: ({ focused, color, size }) => (
+          tabBarLabel: ({ focused}) => (
             <View style={{}}>
               <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Domov</Text>
             </View>
@@ -88,7 +88,7 @@ function MainTabs() {
         component={GameStackScreen}
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused}) => (
             <View style={{}}>
               <CustomTabBarIcon
                 focused={focused}
@@ -97,7 +97,7 @@ function MainTabs() {
               />
             </View>
           ),
-          tabBarLabel: ({ focused, color, size }) => (
+          tabBarLabel: ({ focused}) => (
             <View style={{}}>
               <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Hry</Text>
             </View>
@@ -109,7 +109,7 @@ function MainTabs() {
         component={ArticleScreen}
         options={{
           headerShown: false,
-          tabBarIcon: ({ focused, color, size }) => (
+          tabBarIcon: ({ focused}) => (
             <View style={{}}>
               <CustomTabBarIcon
                 focused={focused}
@@ -118,7 +118,7 @@ function MainTabs() {
               />
             </View>
           ),
-          tabBarLabel: ({ focused, color, size }) => (
+          tabBarLabel: ({ focused}) => (
             <View style={{}}>
               <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Úlohy</Text>
             </View>

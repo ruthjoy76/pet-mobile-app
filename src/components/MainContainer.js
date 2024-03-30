@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import StartScreen from "../navigation/screens/IntroScreen";
 import PickAnimalScreen from "../navigation/screens/PickAnimalScreen";
-import PetName from "../navigation/screens/PetName";
+import PetName from "../navigation/screens/PetNameScreen";
 import MainTabs from "../components/MainTabs";
 
 const Stack = createStackNavigator();

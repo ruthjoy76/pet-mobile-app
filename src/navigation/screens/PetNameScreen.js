@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
-import styles from '../styles/PetNameStyles';
+import styles from '../styles/PetNameScreenStyles';
 
 // Import images
 import cat from '../../../assets/cat.png';
