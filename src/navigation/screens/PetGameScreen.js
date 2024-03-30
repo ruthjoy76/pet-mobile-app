@@ -5,7 +5,7 @@ import styles from '../styles/PetGameScreenStyles';
 import { MaterialIcons} from '@expo/vector-icons';
 
 // Import images
-import PetGame from '../../../assets/PetGame.png';
+import PetGame from '../../../assets/petGame.png';
 
 
 
