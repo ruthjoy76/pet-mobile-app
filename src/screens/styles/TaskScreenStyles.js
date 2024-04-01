@@ -1,4 +1,4 @@
-const ArticleScreenStyles = {
+const TaskScreenStyles = {
     container: {
         flex: 1,
         backgroundColor: '#fff',
@@ -126,5 +126,20 @@ const ArticleScreenStyles = {
         fontWeight: '200',
         
     },
+
+    content: {
+        width: '92%'
+      },
+    
+      itemText: {
+        marginLeft: 8,
+        fontSize: 16,
+      },
+    
+      itemTags: {
+        flexDirection: 'row',
+        flexGrow: 1,
+        flexWrap: 'wrap',
+      },
 };
- export default ArticleScreenStyles;
+ export default TaskScreenStyles;

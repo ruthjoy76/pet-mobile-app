@@ -10,6 +10,7 @@ const Stack = createStackNavigator();
 
 function MainContainer() {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Start">
         <Stack.Screen

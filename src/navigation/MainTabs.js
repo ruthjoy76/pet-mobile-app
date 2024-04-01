@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Text, View } from "react-native";
 import HomeScreen from "../screens/mobileScreen/HomeScreen";
 import GameScreen from "../screens/mobileScreen/GameScreen";
-import ArticleScreen from "../screens/mobileScreen/ArticleScreen";
+import TaskScreen from "../screens/mobileScreen/TaskScreen";
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
 import PetArticleScreen from "../screens/mobileScreen/PetArticleScreen"; // Import PetArticleScreen
 import BirdGameScreen from "../screens/mobileScreen/BirdGameScreen";
@@ -106,7 +106,7 @@ function MainTabs() {
       />
       <Tab.Screen
         name="Úlohy"
-        component={ArticleScreen}
+        component={TaskScreen}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (

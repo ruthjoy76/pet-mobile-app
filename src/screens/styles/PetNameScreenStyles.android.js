@@ -1,4 +1,4 @@
-const PetNameStyles = {
+const PetNameScreenStylesAndroid = {
     safeAreaView: {
         flex: 1,
         backgroundColor: '#fff', // Set the background color of the SafeAreaView
@@ -22,10 +22,10 @@ const PetNameStyles = {
         overflow: 'hidden', 
     },
     headerText: {
-        fontSize: 32,
+        fontSize: 30,
         height: 90,
         width: '90%',
-        fontWeight: '700',
+        fontWeight: '600',
         letterSpacing: -0.5,
         color: '#000000', 
         textAlign: 'center',  
@@ -53,13 +53,13 @@ const PetNameStyles = {
     imageStyle: {
         width: 260, 
         height: 310, 
-        borderRadius: 20,
-        margin: 40, 
+        borderRadius: 30,
+        margin: 45, 
         marginTop: 30,
     },
     petNameContainer: {
         position: 'absolute',
-        bottom: 140, // Adjust the distance from the bottom as needed
+        bottom: 110, // Adjust the distance from the bottom as needed
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 0.5,
@@ -69,7 +69,7 @@ const PetNameStyles = {
         paddingHorizontal: 20,
         paddingVertical: 10,
         minWidth: 100,
-        margin: 48,
+        margin: 52,
         width: '75%', // Adjust the width as needed
     },
     petName: {
@@ -83,11 +83,11 @@ const PetNameStyles = {
         borderWidth: 1,
         borderColor: '#ccc',
         borderRadius: 10,
-        margin: 30,
+        margin: 35,
         padding: 10,
-        width: '60%', // Adjust the width as needed
+        width: '85%', // Adjust the width as needed
         textAlign: 'center',
-        width: '88%',
+      
     },
   
     buttonContainer: {
@@ -109,4 +109,4 @@ const PetNameStyles = {
     },
 };
 
-export default PetNameStyles;
+export default PetNameScreenStylesAndroid;

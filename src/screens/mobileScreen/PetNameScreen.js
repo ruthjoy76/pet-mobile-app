@@ -1,12 +1,21 @@
+// PetName.js
+
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView } from 'react-native';
-import styles from '../styles/PetNameScreenStyles';
+import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView, Platform } from 'react-native';
+import PetNameScreenStylesIOS from '../styles/PetNameScreenStyles.ios';
+import PetNameScreenStylesAndroid from '../styles/PetNameScreenStyles.android';
 
 // Import images
 import cat from '../../../assets/cat.png';
 import dog from '../../../assets/dog.png';
 
-export default function PetName({ navigation, route }) {
+// Choose styles based on platform
+const styles = Platform.select({
+    ios: PetNameScreenStylesIOS,
+    android: PetNameScreenStylesAndroid,
+  });
+
+export default function PetNameScreen({ navigation, route }) {
     const { selectedAnimal, setSelectedAnimal } = route.params;
     const [name, setName] = useState("");
     const [isEmpty, setIsEmpty] = useState(true);
