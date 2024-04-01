@@ -52,7 +52,8 @@ function GameStackScreen() {
   );
 }
 
-function MainTabs() {
+function MainTabs({route}) {
+      const { petName } = route.params;
   return (
     <Tab.Navigator
       screenOptions={{
@@ -64,7 +65,8 @@ function MainTabs() {
       }}>
       <Tab.Screen
         name="Domov"
-        component={HomeStackScreen} // Use the nested stack navigator
+        component={HomeStackScreen} // Directly pass HomeScreen component
+        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (
@@ -86,6 +88,7 @@ function MainTabs() {
       <Tab.Screen
         name="Hry"
         component={GameStackScreen}
+        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (
@@ -107,6 +110,7 @@ function MainTabs() {
       <Tab.Screen
         name="Úlohy"
         component={TaskScreen}
+        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (

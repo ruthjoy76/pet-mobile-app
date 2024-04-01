@@ -21,7 +21,7 @@ export default function PetNameScreen({ navigation, route }) {
     const [isEmpty, setIsEmpty] = useState(true);
 
     const handleEnterPress = () => {
-        navigation.navigate('MainTabs');
+        navigation.navigate('MainTabs', { petName: name });
     };
 
     const handleChangeText = (text) => {

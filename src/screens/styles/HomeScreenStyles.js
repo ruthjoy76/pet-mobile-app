@@ -3,6 +3,17 @@ const HomeScreenStyles = {
         flex: 1,
         backgroundColor: '#fff',
     },
+    petContainer: {
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#800ff0',
+    },
+    petName: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: 'white',
+     },
     header: {
         height: 60,
         justifyContent: 'center',
