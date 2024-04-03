@@ -1,5 +1,5 @@
-import { createStackNavigator, HomeScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
-
+import { HomeScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
+import { createStackNavigator } from "@react-navigation/stack";
 
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
 const GameStack = createStackNavigator(); // Create a stack navigator for GameScreen and PetGameScreen
@@ -56,6 +56,6 @@ function GameStackScreen() {
 
 export {
   HomeStackScreen, 
-  GameStackScreen
+  GameStackScreen 
 }; 
- 
+

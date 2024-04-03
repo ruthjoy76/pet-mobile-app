@@ -1,4 +1,5 @@
-import { React, View, TouchableOpacity, Image} from '../../config/import.Config';
+import React from "react";
+import { View, TouchableOpacity, Image} from "react-native";
 
 
 export default function IntroScreen  ({ navigation }) {

@@ -1,10 +1,8 @@
-// HomeScreen.js
-import { React, View, Text, TouchableOpacity} from '../../config/import.Config';
+import React from "react";
+import { View, Text, TouchableOpacity} from "react-native";
 import styles from '../styles/HomeScreenStyles'; 
 
 export default function HomeScreen({ navigation, route }) {
-    const petName = route?.params?.petName;
-    console.log('Pet Name:', petName);
 
     return (
         <View style={styles.container}>
@@ -13,9 +11,7 @@ export default function HomeScreen({ navigation, route }) {
             <View style={styles.header}>
                 <Text style={styles.headerText}>Welcome in PetMachine</Text>
             </View>
-            <View style={styles.petContainer}>
-                  <Text style={styles.petName}>{petName}</Text>
-                </View>
+            
                 <Text style={styles.subHeaderText}>Ako sa postarať o zvieratko?</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('ArticleOne')}>
                     <View style={styles.containerItem}>

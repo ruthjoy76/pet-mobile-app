@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView, Platform } from '../../config/import.Config';
+import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView, Platform } from "react-native";
 import PetNameScreenStylesIOS from '../styles/PetNameScreenStyles.ios';
 import PetNameScreenStylesAndroid from '../styles/PetNameScreenStyles.android';
 
@@ -19,7 +19,8 @@ export default function PetNameScreen({ navigation, route }) {
     const [isEmpty, setIsEmpty] = useState(true);
 
     const handleEnterPress = () => {
-        navigation.navigate('MainTabs', { petName: name });
+        navigation.navigate('MainTabs');
+      
     };
 
     const handleChangeText = (text) => {

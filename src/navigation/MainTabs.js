@@ -1,11 +1,13 @@
-// MainTabs.js
-import { React, createBottomTabNavigator, Text, View,  TaskScreen, CustomTabBarIcon } from "../config/import.Config"
+import React from "react";
+import { Text, View } from "react-native";
+import { CustomTabBarIcon, TaskScreen } from "../config/import.Config"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeStackScreen, GameStackScreen } from "../navigation/StackScreen";
 
 const Tab = createBottomTabNavigator();
 
-function MainTabs({route}) {
-      const { petName } = route.params;
+function MainTabs() {
+    
   return (
     <Tab.Navigator
       screenOptions={{
@@ -18,7 +20,6 @@ function MainTabs({route}) {
       <Tab.Screen
         name="Domov"
         component={HomeStackScreen} // Directly pass HomeScreen component
-        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (
@@ -40,7 +41,6 @@ function MainTabs({route}) {
       <Tab.Screen
         name="Hry"
         component={GameStackScreen}
-        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (
@@ -62,7 +62,6 @@ function MainTabs({route}) {
       <Tab.Screen
         name="Úlohy"
         component={TaskScreen}
-        initialParams={{ petName }}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (

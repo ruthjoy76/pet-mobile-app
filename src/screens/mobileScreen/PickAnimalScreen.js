@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image} from '../../config/import.Config';
+import { View, Text, TouchableOpacity, Image} from "react-native";
 import styles from '../styles/PickAnimalScreenStyles';
 
 //Import Images

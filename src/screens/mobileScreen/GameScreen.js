@@ -1,4 +1,5 @@
-import { React, View, Text, TouchableOpacity, Image} from '../../config/import.Config';
+import React from "react";
+import { View, Text, TouchableOpacity, Image} from "react-native";
 import styles from '../styles/GameScreenStyles';
 
 

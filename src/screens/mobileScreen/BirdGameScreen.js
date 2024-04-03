@@ -1,4 +1,6 @@
-import { React, View, TouchableOpacity, Image, MaterialIcons } from '../../config/import.Config';
+import React from "react";
+import { View, TouchableOpacity, Image } from "react-native";
+import { MaterialIcons} from '@expo/vector-icons';
 import styles from '../styles/BirdGameScreenStyles';
 
 

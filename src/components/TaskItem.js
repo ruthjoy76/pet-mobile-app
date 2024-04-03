@@ -1,4 +1,5 @@
-import { React, StyleSheet, View, Text, TouchableOpacity } from "../config/import.Config";
+import React from "react";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 
 const Task = (props) => {
   const arrayOfTags = props.tags;

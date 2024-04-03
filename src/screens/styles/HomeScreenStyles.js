@@ -7,7 +7,9 @@ const HomeScreenStyles = {
         height: 40,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#800ff0',
+        backgroundColor: '#FFEAD1',
+        borderRadius: 20,
+        borderColor: '#333',
     },
     petName: {
         fontSize: 24,

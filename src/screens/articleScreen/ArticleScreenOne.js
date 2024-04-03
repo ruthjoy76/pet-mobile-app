@@ -1,4 +1,6 @@
-import { React, View, Text, TouchableOpacity, Image, ScrollView, MaterialIcons } from '../../config/import.Config';
+import React from "react";
+import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import { MaterialIcons} from '@expo/vector-icons';
 import styles from '../styles/PetArticleScreenStyles';
 
 
