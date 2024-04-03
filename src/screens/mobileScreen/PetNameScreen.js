@@ -1,7 +1,5 @@
-// PetName.js
-
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView, Platform } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView, Platform } from '../../config/import.Config';
 import PetNameScreenStylesIOS from '../styles/PetNameScreenStyles.ios';
 import PetNameScreenStylesAndroid from '../styles/PetNameScreenStyles.android';
 

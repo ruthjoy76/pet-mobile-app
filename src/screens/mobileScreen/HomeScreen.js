@@ -1,6 +1,5 @@
 // HomeScreen.js
-import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { React, View, Text, TouchableOpacity} from '../../config/import.Config';
 import styles from '../styles/HomeScreenStyles'; 
 
 export default function HomeScreen({ navigation, route }) {

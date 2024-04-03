@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, TouchableOpacity, Image } from 'react-native';
+import { React, View, TouchableOpacity, Image} from '../../config/import.Config';
+
 
 export default function IntroScreen  ({ navigation }) {
   const goToPickAnimalScreen = () => {

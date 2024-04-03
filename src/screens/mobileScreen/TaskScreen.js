@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Keyboard, ScrollView } from 'react-native';
 import "react-native-gesture-handler";
-import Task from "../../components/TaskItem";
+import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Keyboard, ScrollView, Task } from '../../config/import.Config';
 
 import dog from '../../../assets/dog.png';
 

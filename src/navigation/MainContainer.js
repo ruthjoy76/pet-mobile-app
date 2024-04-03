@@ -1,10 +1,5 @@
-import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import StartScreen from "../screens/mobileScreen/IntroScreen";
-import PickAnimalScreen from "../screens/mobileScreen/PickAnimalScreen";
-import PetName from "../screens/mobileScreen/PetNameScreen";
-import MainTabs from "../navigation/MainTabs";
+import { React, createStackNavigator, StartScreen, PickAnimalScreen, PetName, MainTabs } from "../config/import.Config"
 
 const Stack = createStackNavigator();
 

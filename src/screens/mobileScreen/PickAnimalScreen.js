@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Image} from 'react-native';
+import { View, Text, TouchableOpacity, Image} from '../../config/import.Config';
 import styles from '../styles/PickAnimalScreenStyles';
 
 //Import Images

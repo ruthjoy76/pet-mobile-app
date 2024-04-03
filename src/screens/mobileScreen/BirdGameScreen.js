@@ -1,8 +1,7 @@
-import React from 'react';
-import { View, TouchableOpacity, Image } from 'react-native';
+import { React, View, TouchableOpacity, Image, MaterialIcons } from '../../config/import.Config';
 import styles from '../styles/BirdGameScreenStyles';
 
-import { MaterialIcons} from '@expo/vector-icons';
+
 
 // Import images
 import PetGame from '../../../assets/flappyBirdGame.png';

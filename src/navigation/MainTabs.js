@@ -1,56 +1,8 @@
 // MainTabs.js
-import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
-import { Text, View } from "react-native";
-import HomeScreen from "../screens/mobileScreen/HomeScreen";
-import GameScreen from "../screens/mobileScreen/GameScreen";
-import TaskScreen from "../screens/mobileScreen/TaskScreen";
-import CustomTabBarIcon from "../components/CustomTabBarIcon";
-import PetArticleScreen from "../screens/mobileScreen/PetArticleScreen"; // Import PetArticleScreen
-import BirdGameScreen from "../screens/mobileScreen/BirdGameScreen";
+import { React, createBottomTabNavigator, Text, View,  TaskScreen, CustomTabBarIcon } from "../config/import.Config"
+import { HomeStackScreen, GameStackScreen } from "../navigation/StackScreen";
 
 const Tab = createBottomTabNavigator();
-const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
-const GameStack = createStackNavigator(); // Create a stack navigator for GameScreen and PetGameScreen
-
-function HomeStackScreen() {
-  return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ headerShown: false }}
-      />
-      <HomeStack.Screen
-        name="PetArticle"
-        component={PetArticleScreen}
-        options={{ headerShown: false }}
-      />
-      
-    </HomeStack.Navigator>
-    
-  );
-}
-
-function GameStackScreen() {
-  return (
-    <GameStack.Navigator>
-      <GameStack.Screen
-        name="Game"
-        component={GameScreen}
-        options={{ headerShown: false }}
-      />
-      <GameStack.Screen
-        name="BirdGame"
-        component={BirdGameScreen}
-        options={{ headerShown: false }}
-      />
-      
-    </GameStack.Navigator>
-    
-  );
-}
 
 function MainTabs({route}) {
       const { petName } = route.params;
