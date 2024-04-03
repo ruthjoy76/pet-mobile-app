@@ -1,4 +1,5 @@
-import { createStackNavigator, HomeScreen, PetArticleScreen, GameScreen, BirdGameScreen } from "../config/import.Config";
+import { createStackNavigator, HomeScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
+
 
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
 const GameStack = createStackNavigator(); // Create a stack navigator for GameScreen and PetGameScreen
@@ -12,8 +13,20 @@ function HomeStackScreen() {
         options={{ headerShown: false }}
       />
       <HomeStack.Screen
-        name="PetArticle"
-        component={PetArticleScreen}
+        name="ArticleOne"
+        component={ArticleOne}
+        options={{ headerShown: false }}
+      />
+
+    <HomeStack.Screen
+        name="ArticleTwo"
+        component={ArticleTwo}
+        options={{ headerShown: false }}
+      />
+
+    <HomeStack.Screen
+        name="ArticleThree"
+        component={ArticleThree}
         options={{ headerShown: false }}
       />
       
@@ -40,3 +53,9 @@ function GameStackScreen() {
     
   );
 }
+
+export {
+  HomeStackScreen, 
+  GameStackScreen
+}; 
+ 

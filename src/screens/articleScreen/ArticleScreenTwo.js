@@ -26,7 +26,7 @@ export default function PetArticleScreen({ navigation }) {
     </TouchableOpacity>
         </View>
         <View>
-          <Text style={styles.header}>Ako správne vyčistiť zuby psíkovy?</Text>
+          <Text style={styles.header}>Ako nakŕmiť svoju mačičku?</Text>
             <Text style={styles.subheader}>Ako umývať zúbky svojmu psíkovi:</Text>
                 <Text style={styles.text}>Krok 1: Priprav si potrebné veci</Text>
           

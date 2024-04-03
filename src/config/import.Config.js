@@ -51,4 +51,5 @@ export {
     CustomTabBarIcon, 
     ArticleOne, 
     ArticleTwo, 
-    ArticleThree };
+    ArticleThree, 
+};
