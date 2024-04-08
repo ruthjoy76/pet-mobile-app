@@ -3,8 +3,8 @@ const PickAnimalScreenStyles = {
         flex: 1,
         backgroundColor: '#fff',
     },
-    header: {
-        height: 100,
+    subHeader: {
+        height: 90,
         justifyContent: 'center',
     },
     mainContainer: {
@@ -13,6 +13,7 @@ const PickAnimalScreenStyles = {
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
+        paddingHorizontal: 10,
     },
     subHeaderText: {
         fontSize: 28,
@@ -20,52 +21,62 @@ const PickAnimalScreenStyles = {
         color: '#000000',
         textAlign: 'center',
         marginTop: 10,
-        flex: 1,
     },
     containerItem: {
-        backgroundColor: '#fff',
-        height: 120,
-        borderRadius: 22,
-        marginHorizontal: 20,
-        marginTop: 10,
-        paddingVertical: 20,
-        paddingHorizontal: 20,
-    },
-    subContainer: {
+        flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        height: 90,
-        justifyContent: 'space-between',
-        paddingHorizontal: 10,
-        paddingVertical: 10,
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 10,
+        marginBottom: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.5,
+        shadowRadius: 2,
+        elevation: 5,
+        marginHorizontal: 10,
+        marginVertical: 5,
+        height: 180,
+        width: 150,
+        justifyContent: 'center',
+        },
+    checkbox: {
+        alignSelf: 'center', // Align the checkbox to the center horizontally
+        marginBottom: 10, // Add margin at the bottom of the checkbox
     },
-    checkedContainerItem: {
-        backgroundColor: '#e5e5e5',
-    },
+
+    subContainer: {
+        alignItems: 'center',
+      },
     containerText: {
         fontSize: 22,
         fontWeight: '600',
         color: '#5A2828',
         textAlign: 'center',
-        marginLeft: 10,
-   
+        marginBottom: 10, // Add margin at the bottom of the text
     },
-    subHeader: {
-        flexDirection: 'row',
-        padding: 10,
-        marginTop: 10,
-        marginLeft: 15,
-        marginBottom: 10,
-    },
-    
     imageStyle: {
         width: 80,
         height: 75,
         borderRadius: 10,
-        marginBottom: 30,
-        marginRight: 10,
-        marginTop: 30,
+        alignSelf: 'center', // Align the image to the center horizontally
+        marginBottom: 0, // Add margin at the bottom of the image
+    },
+    enterButton: {
+        backgroundColor: '#5A2828',
+        paddingVertical: 10,
+        borderRadius: 10,
+        marginTop: 10,
+        marginBottom: 20,
+        alignSelf: 'center',
+        paddingHorizontal: 40,
+    },
+    enterButtonText: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
 };
 
