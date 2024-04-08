@@ -54,7 +54,7 @@ const PetNameScreenStylesAndroid = {
         width: 260, 
         height: 310, 
         borderRadius: 30,
-        margin: 45, 
+        margin: 41, 
         marginTop: 30,
     },
     petNameContainer: {
@@ -69,8 +69,9 @@ const PetNameScreenStylesAndroid = {
         paddingHorizontal: 20,
         paddingVertical: 10,
         minWidth: 100,
-        margin: 52,
-        width: '75%', // Adjust the width as needed
+        margin: 60,
+        marginLeft: 38,
+        width: '80%', // Adjust the width as needed
     },
     petName: {
         fontSize: 24,
