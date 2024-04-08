@@ -57,27 +57,7 @@ const PetNameScreenStylesAndroid = {
         margin: 41, 
         marginTop: 30,
     },
-    petNameContainer: {
-        position: 'absolute',
-        bottom: 110, // Adjust the distance from the bottom as needed
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 0.5,
-        backgroundColor: '#fff',
-        borderColor: '#f1f1f1',
-        borderRadius: 10,
-        paddingHorizontal: 20,
-        paddingVertical: 10,
-        minWidth: 100,
-        margin: 60,
-        marginLeft: 38,
-        width: '80%', // Adjust the width as needed
-    },
-    petName: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
+    
     input: {
         position: 'absolute',
         bottom: 40, // Adjust the distance from the bottom as needed

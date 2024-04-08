@@ -35,14 +35,9 @@ export default function PetNameScreen({ navigation, route }) {
                                 style={styles.imageStyle}
                             />
                         </View>
-                        <View style={styles.petNameContainer}>
-                            <Text style={styles.petName}>{name}</Text>
-                        </View>
+                        
                         <TextInput
-                            style={styles.input}
-                            value={""}
-                            onChangeText={handleChangeText}
-                            placeholder={isEmpty && selectedAnimal === 'cat' ? "Name of the cat" : "Name of the dog"}
+                            style={styles.input}   
                         />
                         <TouchableOpacity style={styles.buttonContainer} onPress={handleEnterPress}>
                             <Text style={styles.buttonText}>Enter</Text>
