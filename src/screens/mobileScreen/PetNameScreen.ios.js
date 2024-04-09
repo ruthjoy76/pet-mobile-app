@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView } from "react-native";
+import { View, Text, TouchableOpacity, Image, SafeAreaView, Modal, StyleSheet } from 'react-native';
 import styles from '../styles/PetNameScreenStyles.ios';
 import ImageContainer from '../../components/ImageContainer'; // Import the ImageContainer component
+import PetNameModal from '../../components/PetNameModal'; // Import the PetNameModal component
 
 // Import images
 import cat from '../../../assets/cat.png';
@@ -9,6 +10,7 @@ import dog from '../../../assets/dog.png';
 import horse from '../../../assets/horse.png';
 import bird from '../../../assets/bird.png';
 import hamster from '../../../assets/hamster.png';
+import rabbit from '../../../assets/rabbit.png';
 
 const getImageSource = (animalName) => {
     switch (animalName) {
@@ -29,18 +31,37 @@ const getImageSource = (animalName) => {
     }
 };
 
-export default function PetNameScreenIOS({ navigation, route }) {
-    const { selectedAnimals, _setSelectedAnimal } = route.params;
-    const [_name, setName] = useState("");
-    const [_isEmpty, setIsEmpty] = useState(true);
+const PetNameScreenIOS = ({ navigation, route }) => {
+    const { selectedAnimals } = route.params;
+    const [modalVisible, setModalVisible] = useState(false);
+    const [selectedAnimal, setSelectedAnimal] = useState(null);
+    const [petName, setPetName] = useState("");
+    const [isEmpty, setIsEmpty] = useState(true);
+    const [petNames, setPetNames] = useState([]);
 
     const handleEnterPress = () => {
         navigation.navigate('MainTabs');
     };
 
     const handleChangeText = (text) => {
-        setName(text);
+        setPetName(text);
         setIsEmpty(text === "");
+    };
+
+    const handleImageClick = (animal) => {
+        setSelectedAnimal(animal);
+        setModalVisible(true);
+    };
+
+    const handleModalClose = () => {
+        setModalVisible(false);
+    };
+
+    const handleSavePetName = () => {
+        const updatedPetNames = [...petNames, { animal: selectedAnimal, name: petName }];
+        setPetNames(updatedPetNames);
+        setPetName(""); // Clear pet name input
+        handleModalClose();
     };
 
     return (
@@ -54,18 +75,49 @@ export default function PetNameScreenIOS({ navigation, route }) {
                         {/* Replace View with ImageContainer */}
                         <ImageContainer>
                             {selectedAnimals.map((animal, index) => (
-                                <Image
-                                    key={index}
-                                    source={getImageSource(animal)}
-                                    style={styles.imageStyle}
-                                />
+                                <TouchableOpacity key={index} onPress={() => handleImageClick(animal)}>
+                                    <View style={styles.imageContainer}>
+                                        <Image
+                                            source={getImageSource(animal)}
+                                            style={styles.imageStyle}
+                                        />
+                                        <Text>{petNames.find(pet => pet.animal === animal)?.name}</Text>
+                                    </View>
+                                </TouchableOpacity>
                             ))}
                         </ImageContainer>
-                        
-                        
                     </View>
                 </View>
             </View>
+            {/* Modal for entering pet name */}
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalVisible}
+                onRequestClose={handleModalClose}
+            >
+                <View style={modalStyles.centeredView}>
+                    <PetNameModal
+                        selectedAnimal={selectedAnimal}
+                        petName={petName}
+                        handleChangeText={handleChangeText}
+                        handleSavePetName={handleSavePetName}
+                        isEmpty={isEmpty}
+                        getImageSource={getImageSource}
+                    />
+                </View>
+            </Modal>
         </SafeAreaView>
     );
 }
+
+const modalStyles = StyleSheet.create({
+    centeredView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 22,
+    },
+});
+
+export default PetNameScreenIOS;
