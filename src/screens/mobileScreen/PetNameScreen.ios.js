@@ -22,6 +22,8 @@ const getImageSource = (animalName) => {
             return bird;
         case 'hamster':
             return hamster;
+        case 'rabbit':
+            return rabbit;
         default:
             return null; // Or provide a default image source
     }

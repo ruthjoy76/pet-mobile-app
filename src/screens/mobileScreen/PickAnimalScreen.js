@@ -3,14 +3,16 @@ import { View, Text, TouchableOpacity } from "react-native";
 import PickAnimalList from "../../components/PickAnimaList";
 import styles from "../styles/PickAnimalScreenStyles";
 
+
 // Import Images
 import dog from "../../../assets/dog.png";
 import cat from "../../../assets/cat.png";
 import horse from "../../../assets/horse.png";
 import bird from "../../../assets/bird.png";
 import hamster from "../../../assets/hamster.png";
+import rabbit from "../../../assets/rabbit.png";
 
-const imageSources = [dog, cat, horse, bird, hamster];
+const imageSources = [dog, cat, horse, bird, hamster, rabbit];
 
 // Define animalsData directly in the component
 const animalsData = [
@@ -19,6 +21,7 @@ const animalsData = [
   { name: "horse", image: horse },
   { name: "bird", image: bird },
   { name: "hamster", image: hamster },
+  { name: "rabbit", image: rabbit}
 ];
 
 const PickAnimalScreen = ({ navigation }) => {
