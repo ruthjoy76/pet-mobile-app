@@ -1,5 +1,6 @@
 import React from "react";
-import { StartScreen, PickAnimalScreen, PetName, MainTabs } from "../config/import.Config"
+import { StartScreen, PickAnimalScreen, PetName } from "../config/import.Config"
+import MainTabs from "../navigation/MainTabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 

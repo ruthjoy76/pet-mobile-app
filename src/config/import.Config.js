@@ -6,7 +6,7 @@ import TaskScreen from "../screens/mobileScreen/TaskScreen";
 import BirdGameScreen from "../screens/mobileScreen/BirdGameScreen";
 import PickAnimalScreen from "../screens/mobileScreen/PickAnimalScreen";
 import PetName from "../screens/mobileScreen/PetNameScreen";
-import MainTabs from "../navigation/MainTabs";
+
 
 import CustomTabBarIcon from "../components/CustomTabBarIcon";
 
@@ -22,7 +22,6 @@ export {
     BirdGameScreen,
     PickAnimalScreen,
     PetName,
-    MainTabs, 
     CustomTabBarIcon, 
     ArticleOne, 
     ArticleTwo, 

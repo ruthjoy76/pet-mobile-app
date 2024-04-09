@@ -11,7 +11,7 @@ const PetNameScreenStylesAndroid = {
         height: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 20, 
+        marginTop: 20,
     },
     subContainer: {
         flex: 1,
@@ -19,7 +19,7 @@ const PetNameScreenStylesAndroid = {
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         marginTop: 50,
-        overflow: 'hidden', 
+        overflow: 'hidden',
     },
     headerText: {
         fontSize: 30,
@@ -27,13 +27,13 @@ const PetNameScreenStylesAndroid = {
         width: '90%',
         fontWeight: '600',
         letterSpacing: -0.5,
-        color: '#000000', 
-        textAlign: 'center',  
-        marginTop: 50, 
+        color: '#000000',
+        textAlign: 'center',
+        marginTop: 50,
     },
     containerItem: {
         flexDirection: 'row',
-        alignItems: 'flex-start', 
+        alignItems: 'flex-start',
         justifyContent: 'space-between',
         backgroundColor: '#fff',
         borderRadius: 20,
@@ -41,53 +41,22 @@ const PetNameScreenStylesAndroid = {
         marginTop: 30,
         padding: 10,
         height: '80%',
-        position: 'relative', 
+        position: 'relative',
     },
     imageContainer: {
-        flex: 1,
-        position: 'absolute', 
-        top: 20, 
+        flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center',
-        
-    },
-    imageStyle: {
-        width: 260, 
-        height: 310, 
-        borderRadius: 30,
-        margin: 41, 
-        marginTop: 30,
-    },
-    
-    input: {
-        position: 'absolute',
-        bottom: 40, // Adjust the distance from the bottom as needed
-        borderWidth: 1,
-        borderColor: '#ccc',
-        borderRadius: 10,
-        margin: 35,
-        padding: 10,
-        width: '85%', // Adjust the width as needed
-        textAlign: 'center',
+        width: '100%',
+      },
       
+    imageStyle: {
+        width: 140,
+        height: 120,
+        borderRadius: 30,
+        margin: 10,
     },
-  
-    buttonContainer: {
-        position: 'absolute',
-        bottom: 20, // Adjust the position of the button
-        left: '25%',
-        transform: [{ translateX: -50 }], // Center the button horizontally
-        backgroundColor: '#FFBA69',
-        borderWidth: 1,
-        paddingHorizontal: 125,
-        paddingVertical: 10,
-        borderRadius: 10,
-    },
-    buttonText: {
-        color: '#5A2828',
-        fontSize: 16,
-        fontWeight: 'bold',
-        textAlign: 'center',
-    },
+   
 };
 
 export default PetNameScreenStylesAndroid;
