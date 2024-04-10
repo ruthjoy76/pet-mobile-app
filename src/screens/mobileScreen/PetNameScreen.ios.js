@@ -72,7 +72,7 @@ const PetNameScreenIOS = ({ navigation, route }) => {
                         <Text style={styles.headerText}>Write the name of your pet</Text>
                     </View>
                     <View style={styles.containerItem}>
-                        {/* Replace View with ImageContainer */}
+                        {/* Use ImageContainer */}
                         <ImageContainer>
                             {selectedAnimals.map((animal, index) => (
                                 <TouchableOpacity key={index} onPress={() => handleImageClick(animal)}>
@@ -81,10 +81,16 @@ const PetNameScreenIOS = ({ navigation, route }) => {
                                             source={getImageSource(animal)}
                                             style={styles.imageStyle}
                                         />
+                                        <View style={styles.editIconContainer}>
+                                <FontAwesomeIcon icon={faEdit} size={18} color='#5A2828'  style={styles.editIcon} />
+                                </View>    
                                         <Text>{petNames.find(pet => pet.animal === animal)?.name}</Text>
                                     </View>
                                 </TouchableOpacity>
                             ))}
+                            <TouchableOpacity style={styles.enterButton} onPress={handleEnterPress}>
+                                <Text style={styles.enterButtonText}>Enter</Text>
+                            </TouchableOpacity>
                         </ImageContainer>
                     </View>
                 </View>

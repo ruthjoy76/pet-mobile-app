@@ -56,6 +56,34 @@ const PetNameScreenStylesIOS = {
         borderRadius: 30,
         margin: 10,
     },
+    enterButton: {
+        backgroundColor: '#5A2828',
+        width: '80%',
+        borderRadius: 20,
+        padding: 10,
+        marginTop: 80,
+        alignItems: 'center',
+    },
+    enterButtonText: {
+        color: '#fff',
+        fontSize: 18,
+    },
+    editIconContainer: {
+        position: 'absolute',
+        backgroundColor: '#fff',
+        borderRadius: 20,
+        padding: 5,
+        borderWidth: 1,
+        borderColor: '#5A2828',
+        bottom: 20,
+        right: 10,
+        transform: [{ translateX: 5 }, { translateY: 0 }],
+        alignItems: 'center',
+    },
+    editIcon: {
+       
+    },
+      
    
 };
 
