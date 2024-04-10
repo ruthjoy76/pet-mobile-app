@@ -35,38 +35,40 @@ const PickAnimalScreenStyles = {
         shadowOpacity: 0.5,
         shadowRadius: 2,
         elevation: 5,
-        marginHorizontal: 10,
+        marginHorizontal: 20,
         marginVertical: 5,
-        height: 180,
-        width: 150,
+        height: 160,
+        width: 145,
         justifyContent: 'center',
         },
     checkbox: {
         alignSelf: 'center', // Align the checkbox to the center horizontally
         marginBottom: 10, // Add margin at the bottom of the checkbox
+        marginTop: 10, // Add margin at the top of the checkbox
     },
 
     subContainer: {
         alignItems: 'center',
       },
     containerText: {
-        fontSize: 22,
+        fontSize: 14,
         fontWeight: '600',
         color: '#5A2828',
         textAlign: 'center',
         marginBottom: 10, // Add margin at the bottom of the text
     },
     imageStyle: {
-        width: 80,
-        height: 75,
-        borderRadius: 10,
+        width: 70,
+        height: 60,
+    
         alignSelf: 'center', // Align the image to the center horizontally
         marginBottom: 0, // Add margin at the bottom of the image
     },
     enterButton: {
         backgroundColor: '#5A2828',
-        paddingVertical: 10,
-        borderRadius: 10,
+        width: '80%',
+        borderRadius: 20,
+        padding: 10,
         marginTop: 10,
         marginBottom: 20,
         alignSelf: 'center',

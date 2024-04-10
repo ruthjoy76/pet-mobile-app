@@ -57,11 +57,15 @@ const PetNameScreenStylesAndroid = {
         margin: 10,
     },
     enterButton: {
+        position: 'absolute',
         backgroundColor: '#5A2828',
         width: '80%',
         borderRadius: 20,
+        top: 500,
         padding: 10,
-        marginTop: 80,
+       
+
+        
         alignItems: 'center',
     },
     enterButtonText: {
@@ -80,8 +84,11 @@ const PetNameScreenStylesAndroid = {
         transform: [{ translateX: 5 }, { translateY: 0 }],
         alignItems: 'center',
     },
-    editIcon: {
-       
+    centeredView: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 22,
     },
       
    

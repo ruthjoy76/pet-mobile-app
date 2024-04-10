@@ -1,24 +1,48 @@
-import React from "react";
-import { View, TouchableOpacity, Image} from "react-native";
+import React, { useRef } from "react";
+import { View, TouchableOpacity, Image, Animated } from "react-native";
 
+export default function IntroScreen({ navigation }) {
+  const moveAnimation = useRef(new Animated.Value(0)).current;
 
-export default function IntroScreen  ({ navigation }) {
   const goToPickAnimalScreen = () => {
     navigation.navigate('PickAnimal'); // Navigate to the Pick Animal screen
   };
 
+  const handlePress = () => {
+    // Add animation here
+    Animated.sequence([
+      Animated.timing(moveAnimation, {
+        toValue: 1,
+        duration: 500,
+        useNativeDriver: true
+      }),
+      Animated.timing(moveAnimation, {
+        toValue: 0,
+        duration: 500,
+        useNativeDriver: true
+      })
+    ]).start(goToPickAnimalScreen);
+  };
+
+  const animatedStyle = {
+    transform: [
+      {
+        translateY: moveAnimation.interpolate({
+          inputRange: [0, 1],
+          outputRange: [0, 20] // Adjust the distance the image moves
+        })
+      }
+    ]
+  };
+
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      {/* Wrap the Image component inside TouchableOpacity */}
-      <TouchableOpacity onPress={goToPickAnimalScreen}>
-        <Image
-          source={require('../../../assets/button.png')} // Specify the path to your image
-          style={{ width: 150, height: 150 }} // Adjust the width and height as needed
+      <TouchableOpacity onPress={handlePress}>
+        <Animated.Image
+          source={require('../../../assets/button.png')}
+          style={[{ width: 150, height: 150 }, animatedStyle]}
         />
       </TouchableOpacity>
-     
     </View>
   );
-};
-
-
+}
