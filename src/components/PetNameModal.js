@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, Image, TouchableOpacity, Button } from 'react-native';
+import { View, Text, TextInput, Image, TouchableOpacity } from 'react-native';
 import styles from '../components/styles/PetNameModalStyle'; // Import styles for the modal view
 import { FontAwesome } from '@expo/vector-icons'; // Import FontAwesome for camera icon
 

@@ -1,8 +1,10 @@
-import { HomeScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
+import { ArticleScreen, HomeScreen, PetNameScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
 import { createStackNavigator } from "@react-navigation/stack";
 
+const ArticleStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
 const HomeStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen
 const GameStack = createStackNavigator(); // Create a stack navigator for GameScreen and PetGameScreen
+
 
 function HomeStackScreen() {
   return (
@@ -13,24 +15,41 @@ function HomeStackScreen() {
         options={{ headerShown: false }}
       />
       <HomeStack.Screen
+        name="PetName"
+        component={PetNameScreen}
+        options={{ headerShown: false }}
+      />
+    </HomeStack.Navigator>
+  );
+}
+
+function ArticleStackScreen() {
+  return (
+    <ArticleStack.Navigator>
+      <ArticleStack.Screen
+        name="Article"
+        component={ArticleScreen}
+        options={{ headerShown: false }}
+      />
+      <ArticleStack.Screen
         name="ArticleOne"
         component={ArticleOne}
         options={{ headerShown: false }}
       />
 
-    <HomeStack.Screen
+    <ArticleStack.Screen
         name="ArticleTwo"
         component={ArticleTwo}
         options={{ headerShown: false }}
       />
 
-    <HomeStack.Screen
+    <ArticleStack.Screen
         name="ArticleThree"
         component={ArticleThree}
         options={{ headerShown: false }}
       />
       
-    </HomeStack.Navigator>
+    </ArticleStack.Navigator>
     
   );
 }
@@ -55,7 +74,8 @@ function GameStackScreen() {
 }
 
 export {
-  HomeStackScreen, 
+  HomeStackScreen,
+  ArticleStackScreen, 
   GameStackScreen 
 }; 
 

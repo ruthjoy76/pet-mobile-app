@@ -1,79 +1,85 @@
-const HomeScreenStyles = {
+const PickAnimalScreenStyles = {
     container: {
         flex: 1,
         backgroundColor: '#fff',
     },
-    petContainer: {
-        height: 40,
-        alignItems: 'center',
+    subHeader: {
+        height: 90,
         justifyContent: 'center',
-        backgroundColor: '#FFEAD1',
-        borderRadius: 20,
-        borderColor: '#333',
     },
-    petName: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: 'white',
-     },
-    header: {
-        height: 60,
-        justifyContent: 'center',
-        marginTop: 15,
-    },
-    subContainer: {
+    mainContainer: {
         flex: 1,
+        marginTop: 50,
         backgroundColor: '#FFEAD1',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
-        marginTop: 50,
-    },
-    headerText: {
-        fontSize: 28,
-        fontWeight: '700',
-        letterSpacing: 0.5,
-        color: '#000000', 
-        textAlign: 'center',  
-        marginTop: 0,
+        paddingHorizontal: 10,
     },
     subHeaderText: {
-        fontSize: 20,
-        fontWeight: '400',
-        color: '#5A2828', 
-        textAlign: 'left',  
-        marginTop: 20,
-        marginBottom: 20,
-        marginLeft: 15,
+        fontSize: 24,
+        fontWeight: '700',
+        color: '#000000',
+        textAlign: 'center',
+        marginTop: 10,
     },
     containerItem: {
-        backgroundColor: 'white',
-        borderRadius: 22,
-        margin: 5,
-        marginLeft: 10,
-        marginRight: 10,
-        height: 100,
-        paddingHorizontal: 10, // Horizontal padding
-        paddingVertical: 10,
-        alignItems: 'flex-start',
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 10,
+        marginBottom: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.5,
+        shadowRadius: 2,
+        elevation: 5,
+        marginHorizontal: 25,
+        marginVertical: 5,
+        height: 130,
+        width: 125,
         justifyContent: 'center',
+        },
+    checkbox: {
+        alignSelf: 'center', // Align the checkbox to the center horizontally
+        marginBottom: 10, // Add margin at the bottom of the checkbox
+        marginTop: 10, // Add margin at the top of the checkbox
     },
+
+    subContainer: {
+        alignItems: 'center',
+      },
     containerText: {
-        fontSize: 20,
+        fontSize: 12,
         fontWeight: '600',
-        color: '#5A2828', 
-        textAlign: 'left', 
-        marginLeft: 5,
-        marginBottom: 5,
-        marginTop: 0,
+        color: '#5A2828',
+        textAlign: 'center',
+        marginBottom: 10, // Add margin at the bottom of the text
     },
-    containerParagraphText: {
-        fontSize: 14,
-        fontWeight: '200',
-        color: '#5A2828', 
-        textAlign: 'left',
-        marginLeft: 5,
-        marginRight: 20,
+    imageStyle: {
+        width: 70,
+        height: 60,
+    
+        alignSelf: 'center', // Align the image to the center horizontally
+        marginBottom: 0, // Add margin at the bottom of the image
+    },
+    enterButton: {
+        backgroundColor: '#5A2828',
+        width: '80%',
+        borderRadius: 20,
+        padding: 10,
+        marginTop: 10,
+        marginBottom: 20,
+        alignSelf: 'center',
+        paddingHorizontal: 40,
+    },
+    enterButtonText: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
 };
 
-export default HomeScreenStyles;
+export default PickAnimalScreenStyles;

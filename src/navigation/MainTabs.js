@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { CustomTabBarIcon, TaskScreen } from "../config/import.Config";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeStackScreen, GameStackScreen } from "../navigation/StackScreen";
+import { HomeStackScreen, ArticleStackScreen, GameStackScreen } from "../navigation/StackScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -17,27 +17,48 @@ function MainTabs() {
           paddingBottom: 15, // Add padding to the bottom of the tab bar
         }
       }}>
+      
       <Tab.Screen
         name="Domov"
-        component={HomeStackScreen} // Directly pass HomeScreen component
+        component={HomeStackScreen}
+        options={{
+          headerShown: false,
+          tabBarIcon: ({ focused }) => (
+            <CustomTabBarIcon
+              focused={focused}
+              iconFocused={require("../../assets/homefocused.png")}
+              iconUnfocused={require("../../assets/homeunfocused.png")}
+            />
+          ),
+          tabBarLabel: ({ focused }) => (
+            <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Domov</Text>
+          )
+        }}
+      />
+
+<Tab.Screen
+        name="Article"
+        component={ArticleStackScreen} // Directly pass HomeScreen component
         options={{
           headerShown: false,
           tabBarIcon: ({ focused}) => (
             <View style={{}}>
               <CustomTabBarIcon
                 focused={focused}
-                iconFocused={require("../../assets/homefocused.png")}
-                iconUnfocused={require("../../assets/homenotfocused.png")}
+                iconFocused={require("../../assets/petfocused.png")}
+                iconUnfocused={require("../../assets/petunfocused.png")}
+                
               />
             </View>
           ),
           tabBarLabel: ({ focused}) => (
             <View style={{}}>
-              <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Domov</Text>
+              <Text style={{ color: focused ? '#FFBA69' : '#5A2828' }}>Article</Text>
             </View>
           )
         }}
       />
+
       <Tab.Screen
         name="Hry"
         component={GameStackScreen}

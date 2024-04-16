@@ -7,7 +7,7 @@ const useEventHandler = () => {
     const [isEmpty, setIsEmpty] = useState(true);
     const [petNames, setPetNames] = useState([]);
 
-    const handleEnterPress = (navigation) => () => navigation.navigate('MainTabs');
+    const handleEnterPress = (navigation) => () => navigation.navigate('Home');
 
     const handleChangeText = (text) => {
         setPetName(text);

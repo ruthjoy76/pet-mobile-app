@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import { View, TouchableOpacity, Image, Animated } from "react-native";
+import { View, TouchableOpacity, Animated } from "react-native";
 
 export default function IntroScreen({ navigation }) {
   const moveAnimation = useRef(new Animated.Value(0)).current;
 
   const goToPickAnimalScreen = () => {
-    navigation.navigate('PickAnimal'); // Navigate to the Pick Animal screen
+    navigation.navigate('Welcome'); // Navigate to the Pick Animal screen
   };
 
   const handlePress = () => {

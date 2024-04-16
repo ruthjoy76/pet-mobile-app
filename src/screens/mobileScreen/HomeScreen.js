@@ -1,37 +1,65 @@
-import React from "react";
-import { View, Text, TouchableOpacity} from "react-native";
-import styles from '../styles/HomeScreenStyles'; 
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import PickAnimalList from "../../components/PickAnimaList";
+import styles from "../styles/HomeScreenStyles";
 
-export default function HomeScreen({ navigation, route }) {
+// Import Images
+import dog from "../../../assets/dog.png";
+import cat from "../../../assets/cat.png";
+import horse from "../../../assets/horse.png";
+import bird from "../../../assets/bird.png";
+import hamster from "../../../assets/hamster.png";
+import rabbit from "../../../assets/rabbit.png";
 
-    return (
-        <View style={styles.container}>
-           
-            <View style={styles.subContainer}>
-            <View style={styles.header}>
-                <Text style={styles.headerText}>Welcome in PetMachine</Text>
-            </View>
-            
-                <Text style={styles.subHeaderText}>Ako sa postarať o zvieratko?</Text>
-                <TouchableOpacity onPress={() => navigation.navigate('ArticleOne')}>
-                    <View style={styles.containerItem}>
-                        <Text style={styles.containerText}>Ako správne vyčistiť zuby psíkovy?</Text>
-                        <Text style={styles.containerParagraphText}>Zisti, ako správne integrovať čistenie zubov do denného režimu vášho psíka a vytvorte pozitívnu skúsenosť.</Text>
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('ArticleTwo')}>
-                    <View style={styles.containerItem}>
-                        <Text style={styles.containerText}>Ako nakŕmiť svoju mačičku?</Text>
-                        <Text style={styles.containerParagraphText}>Zabezpeč svojej mačke kvalitné krmivo, ktoré obsahuje všetky živiny, vitamíny a minerály, ktoré potrebuje pre svoje zdravie.</Text>
-                    </View>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => navigation.navigate('ArticleThree')}>
-                    <View style={styles.containerItem}>
-                        <Text style={styles.containerText}>Naučenie nových trikov a zručností</Text>
-                        <Text style={styles.containerParagraphText}>Tréning a výcvik sú dôležitou súčasťou starostlivosti o domácich miláčikov. Venujte čas na učenie vášho psa alebo iných zvierat novým trikom a zručnostiam.</Text>
-                    </View>
-                </TouchableOpacity>
-            </View>
+const imageSources = [dog, cat, horse, bird, hamster, rabbit];
+
+// Define animalsData directly in the component
+const animalsData = [
+  { name: "dog", image: dog },
+  { name: "cat", image: cat },
+  { name: "horse", image: horse },
+  { name: "bird", image: bird },
+  { name: "hamster", image: hamster },
+  { name: "rabbit", image: rabbit },
+];
+
+const HomeScreen = ({ navigation }) => {
+  const [selectedAnimals, setSelectedAnimals] = useState([]);
+
+  const handleAnimalSelection = (animal) => {
+    const animalIndex = selectedAnimals.indexOf(animal);
+    if (animalIndex === -1) {
+      setSelectedAnimals([...selectedAnimals, animal]);
+    } else {
+      const updatedAnimals = [...selectedAnimals];
+      updatedAnimals.splice(animalIndex, 1);
+      setSelectedAnimals(updatedAnimals);
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.mainContainer}>
+        <View style={styles.subHeader}>
+          <Text style={styles.subHeaderText}>Pick your animal</Text>
         </View>
-    );
-}
+        <PickAnimalList
+          animalsData={animalsData}
+          imageSources={imageSources}
+          selectedAnimals={selectedAnimals}
+          handleAnimalSelection={handleAnimalSelection}
+        />
+        <TouchableOpacity
+          style={styles.enterButton}
+          onPress={() => {
+            navigation.navigate("PetName", { selectedAnimals });
+          }}
+        >
+          <Text style={styles.enterButtonText}>Enter</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
+
+export default HomeScreen;

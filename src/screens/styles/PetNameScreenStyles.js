@@ -1,4 +1,4 @@
-const PetNameScreenStylesAndroid = {
+const PetNameScreenStyles = {
     safeAreaView: {
         flex: 1,
         backgroundColor: '#fff', // Set the background color of the SafeAreaView
@@ -94,4 +94,4 @@ const PetNameScreenStylesAndroid = {
    
 };
 
-export default PetNameScreenStylesAndroid;
+export default PetNameScreenStyles;
