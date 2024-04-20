@@ -43,12 +43,15 @@ const HomeScreen = ({ navigation }) => {
         <View style={styles.subHeader}>
           <Text style={styles.subHeaderText}>Pick your animal</Text>
         </View>
+        <View style={styles.pickAnimalContainer}>
         <PickAnimalList
           animalsData={animalsData}
           imageSources={imageSources}
           selectedAnimals={selectedAnimals}
           handleAnimalSelection={handleAnimalSelection}
         />
+        </View>
+        
         <TouchableOpacity
           style={styles.enterButton}
           onPress={() => {
@@ -57,6 +60,7 @@ const HomeScreen = ({ navigation }) => {
         >
           <Text style={styles.enterButtonText}>Enter</Text>
         </TouchableOpacity>
+        
       </View>
     </View>
   );

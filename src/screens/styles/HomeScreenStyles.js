@@ -1,4 +1,5 @@
-const PickAnimalScreenStyles = {
+
+const HomeScreenStyles = {
     container: {
         flex: 1,
         backgroundColor: '#fff',
@@ -22,25 +23,46 @@ const PickAnimalScreenStyles = {
         textAlign: 'center',
         marginTop: 10,
     },
-    containerItem: {
+    pickAnimalContainer: {
         flex: 1,
-        flexDirection: 'row',
+        flexDirection: 'column',
+        backgroundColor: '#FFBA69',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        paddingHorizontal: 10,
         alignItems: 'center',
-        backgroundColor: '#fff',
-        padding: 10,
-        borderRadius: 10,
-        marginBottom: 10,
+        justifyContent: 'center',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.5,
         shadowRadius: 2,
         elevation: 5,
-        marginHorizontal: 25,
+        padding: 30,
+        borderRadius: 10,
+        top: 50,
+        marginTop: 250,
+        width: "100%",
+       
+    },
+    containerItem: {
+        flex: .9,
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        padding: 20, 
+        top: 10,
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.5,
+        shadowRadius: 2,
+        elevation: 5,
+        marginHorizontal: 5,
         marginVertical: 5,
-        height: 130,
+        height: 130, // Set the same height as pickAnimalContainer
         width: 125,
         justifyContent: 'center',
-        },
+    },
     checkbox: {
         alignSelf: 'center', // Align the checkbox to the center horizontally
         marginBottom: 10, // Add margin at the bottom of the checkbox
@@ -82,4 +104,4 @@ const PickAnimalScreenStyles = {
     },
 };
 
-export default PickAnimalScreenStyles;
+export default HomeScreenStyles;

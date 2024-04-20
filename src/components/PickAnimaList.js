@@ -22,7 +22,8 @@ const PickAnimalList = ({
       data={animalsData}
       renderItem={renderItem}
       keyExtractor={(item) => item.name}
-      numColumns={2}
+      horizontal={true} // Set to true for horizontal scrolling
+      showsHorizontalScrollIndicator={false} // Hide scroll indicator
     />
   );
 };
