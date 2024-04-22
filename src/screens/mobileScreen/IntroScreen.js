@@ -5,7 +5,7 @@ export default function IntroScreen({ navigation }) {
   const moveAnimation = useRef(new Animated.Value(0)).current;
 
   const goToPickAnimalScreen = () => {
-    navigation.navigate('Welcome'); // Navigate to the Pick Animal screen
+    navigation.navigate('MainTabs'); // Navigate to the Pick Animal screen
   };
 
   const handlePress = () => {

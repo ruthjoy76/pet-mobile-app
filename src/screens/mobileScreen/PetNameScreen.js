@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, Modal,  Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { MaterialIcons} from '@expo/vector-icons';
 import styles from '../styles/PetNameScreenStyles';
 import ImageContainer from '../../components/ImageContainer';
 import PetNameModal from '../../components/PetNameModal';
@@ -27,11 +28,18 @@ const PetNameScreen = ({ navigation, route }) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <View style={styles.container}>
-                <View style={styles.subContainer}>
+                <View style={styles.subContainer}><View>
+        <TouchableOpacity
+      style={styles.circleButton}
+      onPress={() => navigation.navigate("Home")}
+    >
+      <MaterialIcons name="keyboard-arrow-left" size={24} color="#5A2828" />
+    </TouchableOpacity>
+        </View>
                     <View style={styles.header}>
                         <Text style={styles.headerText}>Write the name of your pet</Text>
                     </View>
-                    <View style={styles.containerItem}>
+                    <View>
                         <ImageContainer>
                             {selectedAnimals.map((animal, index) => (
                                 <TouchableOpacity key={index} onPress={() => handleImageClick(animal)}>
@@ -40,13 +48,11 @@ const PetNameScreen = ({ navigation, route }) => {
                                         <View style={styles.editIconContainer}>
                                             <FontAwesomeIcon icon={faEdit} size={18} color='#5A2828' style={styles.editIcon} />
                                         </View>
-                                        <Text>{petNames.find(pet => pet.animal === animal)?.name}</Text>
+                                        <Text style={styles.animalName}>{petNames.find(pet => pet.animal === animal)?.name}</Text>
                                     </View>
                                 </TouchableOpacity>
                             ))}
-                            <TouchableOpacity style={styles.enterButton} onPress={handleEnterPress(navigation)}>
-                                <Text style={styles.enterButtonText}>Enter</Text>
-                            </TouchableOpacity>
+                            
                         </ImageContainer>
                     </View>
                 </View>

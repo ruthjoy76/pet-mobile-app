@@ -23,6 +23,8 @@ modalTitle: {
 modalImage: {
     width: 100,
     height: 100,
+    backgroundColor: '#FFBA69',
+    borderColor: '#5A2828',
     marginBottom: 10,
     borderRadius: 50,
 },
@@ -31,7 +33,6 @@ cameraIcon: {
     backgroundColor: '#fff',
     borderRadius: 50,
     padding: 8,
-   
     borderWidth: 1,
     borderColor: '#5A2828',
     bottom: 9,
@@ -50,7 +51,7 @@ input: {
     paddingHorizontal: 20,
 },
 button: {
-    backgroundColor: '#FFEAD1',
+    backgroundColor: '#FFBA69',
     borderRadius: 5,
     padding: 10,
     marginTop: 10,

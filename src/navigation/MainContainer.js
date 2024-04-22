@@ -1,5 +1,5 @@
 import React from "react";
-import { StartScreen, WelcomeScreen } from "../config/import.Config"
+import { StartScreen } from "../config/import.Config"
 import MainTabs from "../navigation/MainTabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -17,12 +17,7 @@ function MainContainer() {
           component={StartScreen}
           options={{ headerShown: false }} // Hide the header for Start screen
         />
-        <Stack.Screen
-          name="Welcome"
-          component={WelcomeScreen}
-          options={{ headerShown: false }} // Hide the header for PickAnimal screen
-        />
-        
+  
         <Stack.Screen
           name="MainTabs"
           component={MainTabs}

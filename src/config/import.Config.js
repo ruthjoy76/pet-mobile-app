@@ -1,6 +1,5 @@
 // importConfig.js
 import StartScreen from "../screens/mobileScreen/IntroScreen";
-import WelcomeScreen from "../screens/mobileScreen/WelcomeScreen";
 import ArticleScreen from "../screens/mobileScreen/ArticleScreen";
 import GameScreen from "../screens/mobileScreen/GameScreen";
 import TaskScreen from "../screens/mobileScreen/TaskScreen";
@@ -16,7 +15,6 @@ import ArticleThree from "../screens/articleScreen/ArticleScreenThree";
 
 export { 
     StartScreen,
-    WelcomeScreen, 
     ArticleScreen, 
     GameScreen, 
     TaskScreen,
