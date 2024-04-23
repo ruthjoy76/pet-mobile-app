@@ -1,5 +1,3 @@
-// AnimalImages.js
-
 // Import images
 import cat from '../../assets/cat.png';
 import dog from '../../assets/dog.png';

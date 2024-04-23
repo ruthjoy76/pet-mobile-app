@@ -22,29 +22,20 @@ const useEventHandler = () => {
     const handleModalClose = () => setModalVisible(false);
 
     const handleSavePetName = () => {
-        // Create a copy of the existing petNames state
         const updatedPetNames = [...petNames];
         
-        // Check if the selected animal already exists in the petNames state
         const existingPetIndex = updatedPetNames.findIndex(
             (pet) => pet.animal === selectedAnimal
         );
         
         if (existingPetIndex !== -1) {
-            // If the animal exists, update the name
             updatedPetNames[existingPetIndex].name = petName;
         } else {
-            // Otherwise, add a new entry for the animal
             updatedPetNames.push({ animal: selectedAnimal, name: petName });
         }
-        
-        // Update the state with the modified petNames array
         setPetNames(updatedPetNames);
-        
-        // Clear the current petName input
         setPetName("");
         
-        // Close the modal
         handleModalClose();
     };
     

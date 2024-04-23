@@ -1,4 +1,4 @@
-import { ArticleScreen, HomeScreen, PetNameScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../config/import.Config";
+import { ArticleScreen, HomeScreen, PetNameScreen, GameScreen, BirdGameScreen, ArticleOne, ArticleTwo, ArticleThree} from "../utils/import.Config";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const ArticleStack = createStackNavigator(); // Create a stack navigator for HomeScreen and PetArticleScreen

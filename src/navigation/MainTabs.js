@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { CustomTabBarIcon, TaskScreen } from "../config/import.Config";
+import { CustomTabBarIcon, TaskScreen } from "../utils/import.Config";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeStackScreen, ArticleStackScreen, GameStackScreen } from "../navigation/StackScreen";
 
