@@ -1,6 +1,6 @@
 // importConfig.js
 import StartScreen from "../screens/mobileScreen/IntroScreen";
-import ArticleScreen from "../screens/mobileScreen/ArticleScreen";
+import ArticleScreen from "../screens/mobileScreen/MainArticleScreen";
 import GameScreen from "../screens/mobileScreen/GameScreen";
 import TaskScreen from "../screens/mobileScreen/TaskScreen";
 import BirdGameScreen from "../screens/mobileScreen/BirdGameScreen";

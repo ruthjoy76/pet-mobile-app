@@ -4,7 +4,7 @@ import { MaterialIcons} from '@expo/vector-icons';
 import styles from '../styles/PetArticleScreenStyles';
 
 // Import images
-import dogArticle from '../../../assets/dogArticle.png';
+import petArticle from '../../../assets/pet.png';
 
 const BulletPoint = ({ text }) => {
   return (
@@ -22,14 +22,14 @@ export default function PetArticleScreen({ navigation }) {
         <View>
         <TouchableOpacity
       style={styles.circleButton}
-      onPress={() => navigation.navigate("Article")}
+      onPress={() => navigation.navigate("MainArticle")}
     >
       <MaterialIcons name="keyboard-arrow-left" size={24} color="#5A2828" />
     </TouchableOpacity>
         </View>
         <View>
           <Text style={styles.header}>Naučenie nových trikov a zručností</Text>
-            <Text style={styles.subheader}>Ako umývať zúbky svojmu psíkovi:</Text>
+            <Text style={styles.subheader}>Naučenie nových trikov a zručností:</Text>
                 <Text style={styles.text}>Krok 1: Priprav si potrebné veci</Text>
           
                     <BulletPoint text="Získaj špeciálnu zubnú kefku pre psov alebo mäkký zubný prstencový návlek." />
@@ -38,7 +38,7 @@ export default function PetArticleScreen({ navigation }) {
                     <BulletPoint text="Začni pomaly a nežne. Hladkaj psíka na brade a postupne mu otváraj ústa, aby si zvykol na dotyk v tejto oblasti." />
     
                         <Image
-                            source={dogArticle}
+                            source={petArticle}
                             style={styles.imageStyle}
                         /> 
                 <Text style={styles.text}>Krok 3: Zoznámte ho s návlekom</Text>

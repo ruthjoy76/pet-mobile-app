@@ -23,7 +23,7 @@ export default function PetArticleScreen({ navigation }) {
         <View>
         <TouchableOpacity
       style={styles.circleButton}
-      onPress={() => navigation.navigate("Article")}
+      onPress={() => navigation.navigate("MainArticle")}
     >
       <MaterialIcons name="keyboard-arrow-left" size={24} color="#5A2828" />
     </TouchableOpacity>

@@ -25,6 +25,9 @@ const HomeScreenStyles = {
     },
     profilePictureContainer: {
         flexDirection: 'row',
+        backgroundColor: '#FFBA69',
+        borderRadius: 10,
+        padding: 10,
         justifyContent: 'center',
         alignItems: 'center',
         margin: 10, // Increased margin for more space between sections
@@ -38,7 +41,7 @@ const HomeScreenStyles = {
         width: 50, // Width of the circle
         height: 50, // Height of the circle
         borderRadius: 25, // Half of width/height to create a perfect circle
-        backgroundColor: '#FFBA69', // Background color of the circle
+        backgroundColor: '#fff', // Background color of the circle
         justifyContent: 'center', // Center the icon within the circle
         alignItems: 'center', // Center the icon within the circle
         // Additional styling as needed, e.g., shadow, border, etc.
@@ -47,7 +50,7 @@ const HomeScreenStyles = {
         margin: 10, // Slight increase in margin for better spacing
         padding: 10, // Increased padding for comfort
         borderWidth: 1,
-        borderColor: '#FFBA69', // Matches button color for consistency
+        borderColor: '#fff', // Matches button color for consistency
         borderRadius: 10, // Rounded corners for a modern look
         width: '80%', // Adjusted width to take up more screen space
         textAlign: 'center',

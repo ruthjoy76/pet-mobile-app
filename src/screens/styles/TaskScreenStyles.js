@@ -27,25 +27,38 @@ const TaskScreenStyles = {
         textAlign: 'center',  
         marginTop: 0,
     },
-    subHeader: {
+    profilePictureContainer: {
         flexDirection: 'row',
+        backgroundColor: '#FFBA69',
+        borderRadius: 10,
         padding: 10,
-        marginTop: 10,
-        marginLeft: 15,
-        marginBottom: 10,
+        alignItems: 'center',
+        margin: 10, // Increased margin for more space between sections
+    },
+   
+    imageStyle: {
+        width: 50, // Increased width for better visibility
+        height: 50, // Increased height for better visibility
+        borderRadius: 60,
+    },
+    iconCircle: {
+        width: 50, // Width of the circle
+        height: 50, // Height of the circle
+        borderRadius: 25, // Half of width/height to create a perfect circle
+        backgroundColor: '#fff', // Background color of the circle
+        justifyContent: 'center', // Center the icon within the circle
+        alignItems: 'center', // Center the icon within the circle
+        // Additional styling as needed, e.g., shadow, border, etc.
     },
     subHeaderText: {
-        fontSize: 20,
-        fontWeight: '400',
-        color: '#5A2828', 
-        textAlign: 'left',  
-        marginTop: 10,
-    },
-    imageStyle: {
-        height: 50,
-        width: 50,
-        borderRadius: 30,
-        marginRight: 10,
+        margin: 10, // Slight increase in margin for better spacing
+        padding: 10, // Increased padding for comfort
+        borderWidth: 1,
+        borderColor: '#fff', // Matches button color for consistency
+        borderRadius: 10, // Rounded corners for a modern look
+        width: '80%', // Adjusted width to take up more screen space
+        textAlign: 'center',
+        fontSize: 16, // Increased font size for better readability
     },
    
     sectionTitle: {

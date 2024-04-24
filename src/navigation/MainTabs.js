@@ -1,10 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, LogBox } from "react-native";
 import { CustomTabBarIcon, TaskScreen } from "../utils/import.Config";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeStackScreen, ArticleStackScreen, GameStackScreen } from "../navigation/StackScreen";
 
 const Tab = createBottomTabNavigator();
+
+LogBox.ignoreLogs([
+  'Non-serializable values were found in the navigation state',
+]);
 
 function MainTabs() {
     
@@ -37,7 +41,7 @@ function MainTabs() {
       />
 
 <Tab.Screen
-        name="Article"
+        name="MainArticle"
         component={ArticleStackScreen} // Directly pass HomeScreen component
         options={{
           headerShown: false,
