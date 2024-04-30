@@ -7,6 +7,7 @@ import {
   ArticleOne,
   ArticleTwo,
   ArticleThree,
+  ArticleFour
 } from "../utils/import.Config";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -54,6 +55,12 @@ function ArticleStackScreen() {
       <ArticleStack.Screen
         name="Three"
         component={ArticleThree}
+        options={{ headerShown: false }}
+      />
+
+      <ArticleStack.Screen
+        name="Four"
+        component={ArticleFour}
         options={{ headerShown: false }}
       />
     </ArticleStack.Navigator>

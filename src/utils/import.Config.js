@@ -12,6 +12,7 @@ import CustomTabBarIcon from "../components/CustomTabBarIcon";
 import ArticleOne from "../screens/articleScreen/ArticleScreenOne";
 import ArticleTwo from "../screens/articleScreen/ArticleScreenTwo";
 import ArticleThree from "../screens/articleScreen/ArticleScreenThree";
+import ArticleFour from "../screens/articleScreen/ArticleScreenFour";
 
 export { 
     StartScreen,
@@ -24,5 +25,6 @@ export {
     CustomTabBarIcon, 
     ArticleOne, 
     ArticleTwo, 
-    ArticleThree, 
+    ArticleThree,
+    ArticleFour 
 };

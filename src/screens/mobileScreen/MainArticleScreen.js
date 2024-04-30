@@ -27,6 +27,12 @@ export default function MainArticleScreen({ navigation, route }) {
                         <Text style={styles.containerParagraphText}>Ako navyknúť mačku na zvuky v byte.</Text>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Four')}>
+                    <View style={styles.containerItem}>
+                        <Text style={styles.containerText}>Prečo mačka slintá z úst?</Text>
+                        <Text style={styles.containerParagraphText}>Niektorí majitelia mačiek môžu u svojich miláčikov zaznamenať nadmerné slinenie. Čo nám to môže povedať?</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     );
