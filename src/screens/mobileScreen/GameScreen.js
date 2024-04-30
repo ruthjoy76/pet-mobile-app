@@ -4,7 +4,6 @@ import styles from '../styles/GameScreenStyles';
 
 
 // Import images
-import dogGame from '../../../assets/dogGame.png';
 import birdGame from '../../../assets/birdGame.png';
 import button from '../../../assets/button.png';
 
@@ -18,26 +17,7 @@ export default function GameScreen({ navigation }) {
                 <Text style={styles.headerText}>Hry</Text>
             </View>
 
-                <View style={styles.containerItem}>
-                    <View style={styles.imageContainer}>
-                        <Text style={styles.containerText}>Skoky so Štvornohým Kamarátom</Text>
-                        <Text style={styles.containerParagraphText}>Dosiahni rekordné skóre v bežaní so svojím verným spoločníkom!</Text>
-                        <Image
-                            source={dogGame}
-                            style={styles.imageStyle}
-                        />
-                    </View>
-                    {/* Wrap the TouchableOpacity properly */}
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('BirdGame')}
-                        style={styles.buttonContainer}>
-                        <Image
-                            source={button}
-                            style={styles.buttonImage}
-                        />
-                    </TouchableOpacity>
-                </View>
-
+                
                 <View style={styles.containerItem}>
                     <View style={styles.imageContainer}>
                         <Text style={styles.containerText}>Prekážkový let</Text>
