@@ -37,23 +37,27 @@ const PetArticleScreenStyles = {
     },
     text: {
       fontSize: 14,
-      fontWeight: '700',
       color: '#5A2828',
+      margin: 10,
     },
     subtext: {
       fontSize: 14,
       fontWeight: '200',
-      color: '#5A2828',
+      color: '#000000',
     },
-    imageStyle: {
-      width: 350,
-      height: 170,
-      borderRadius: 20,
-      marginHorizontal: 'auto',
-      marginVertical: 'auto',
-      marginBottom: 10,
-      alignSelf: 'center'
-    },
+    readMoreButton: {
+      backgroundColor: '#f0f0f0',  // Light grey background color
+      alignSelf: 'flex-end',       // Align the button to the right 
+  },
+  readMoreText: {
+      color: '#5A2828',           
+  },
+  imageStyle: {
+    width: '100%', // Width of the image as a percentage of the container
+    height: 200, // Height of the image in pixels (adjust as needed)
+    marginVertical: 10, // Vertical margin around the image
+    borderRadius: 10, // Rounded corners for the image
+},
     circleButton: {
       width: 60,
       height: 60,

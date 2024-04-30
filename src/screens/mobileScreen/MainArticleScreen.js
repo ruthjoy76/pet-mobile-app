@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity} from "react-native";
 import styles from '../styles/ArticleScreenStyles'; 
 
-export default function HomeScreen({ navigation, route }) {
+export default function MainArticleScreen({ navigation, route }) {
 
     return (
         <View style={styles.container}>
@@ -18,14 +18,13 @@ export default function HomeScreen({ navigation, route }) {
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Two')}>
                     <View style={styles.containerItem}>
-                        <Text style={styles.containerText}>Ako nakŕmiť svoju mačičku?</Text>
-                        <Text style={styles.containerParagraphText}>Zabezpeč svojej mačke kvalitné krmivo, ktoré obsahuje všetky živiny, vitamíny a minerály, ktoré potrebuje pre svoje zdravie.</Text>
-                    </View>
+                        <Text style={styles.containerText}>Spoznajte svoju mačku lepšie</Text>
+                        <Text style={styles.containerParagraphText}>Mačky sú krásne a tajomné tvory (stvorenia). </Text></View>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Three')}>
                     <View style={styles.containerItem}>
-                        <Text style={styles.containerText}>Naučenie nových trikov a zručností</Text>
-                        <Text style={styles.containerParagraphText}>Tréning a výcvik sú dôležitou súčasťou starostlivosti o domácich miláčikov. Venujte čas na učenie vášho psa alebo iných zvierat novým trikom a zručnostiam.</Text>
+                        <Text style={styles.containerText}>Mačka sa bojí hlasných zvukov – čo robiť?</Text>
+                        <Text style={styles.containerParagraphText}>Ako navyknúť mačku na zvuky v byte.</Text>
                     </View>
                 </TouchableOpacity>
             </View>

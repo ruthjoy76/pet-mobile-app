@@ -16,7 +16,7 @@ const BulletPoint = ({ text }) => {
   );
 };
 
-export default function PetArticleScreen({ navigation }) {
+export default function ArticleOne({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container}>
